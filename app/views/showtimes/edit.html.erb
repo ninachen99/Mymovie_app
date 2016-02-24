@@ -1,0 +1,21 @@
+
+    
+<h1>Edit Showtimes</h1>
+  
+
+<div>
+  <div class="container">
+    
+
+    <%= form_for(@showtime) do |f| %>
+      <%= f.text_field :month %>
+      <%= f.text_field :date %>
+      <%= f.text_field :hour %>
+      <%= f.text_field :year %>
+
+      <%= f.submit "Update", :class => "btn btn-success" %>
+    <% end %> 
+    
+  </div>
+</div> 
+

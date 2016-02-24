@@ -1,0 +1,17 @@
+
+   
+<h1>Showtimes</h1>
+ 
+
+<div>
+  <div>
+    <div>
+      <div class="container">
+       
+        <h2><%= @showtime.month + "-" + @showtime.date + "-" + @showtime.hour + "-" + @showtime.year %></h2>
+        
+        <%= link_to "Edit", edit_showtime_path(@showtime) %>
+      </div>
+    </div>
+  </div>
+</div>

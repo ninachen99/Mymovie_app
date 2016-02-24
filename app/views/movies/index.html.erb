@@ -1,0 +1,17 @@
+<div class="main actor-index">
+      <div class="container">
+        <div class="row">
+
+          <!--
+          To do: Loop through movies and display each one with this HTML-->
+          <% @movies.each do |movie| %>
+          <div class="actor col-xs-2">
+             <%= image_tag movie.image %>
+            <h3>  <%= movie.title %> </h3>
+            <p> Showtime: <%= movie.showtime %> </p>
+            <%= link_to "Learn more", movie_path(movie) %>
+          </div>
+          <% end %>
+          
+      </div>
+</div>

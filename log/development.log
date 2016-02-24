@@ -1,0 +1,2214 @@
+
+
+Started GET "/" for ::1 at 2016-02-23 10:58:19 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (1.9ms)
+Completed 200 OK in 28ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateTheaters (20160223170033)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "theaters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "image" varchar, "seats" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160223170033"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateMovies (20160223170220)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "image" varchar, "showtime" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160223170220"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateOrders (20160223170254)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "movie_id" integer, "theater_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.6ms)[0m  [1mCREATE  INDEX "index_orders_on_movie_id" ON "orders" ("movie_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_movie_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_orders_on_theater_id" ON "orders" ("theater_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160223170254"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_theater_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_theater_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_movie_id' AND type='index'
+
+
+
+Started GET "/" for ::1 at 2016-02-23 11:16:20 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("title", "image", "showtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "George Clooney"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/george-clooney.jpg"], ["showtime", "23-3-2016"], ["created_at", "2016-02-23 17:24:24.104781"], ["updated_at", "2016-02-23 17:24:24.104781"]]
+  [1m[35m (8.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("title", "image", "showtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "George Clooney"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/george-clooney.jpg"], ["showtime", "23-3-2016"], ["created_at", "2016-02-23 17:24:58.653566"], ["updated_at", "2016-02-23 17:24:58.653566"]]
+  [1m[35m (8.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "movies" ("title", "image", "showtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Matt Damon"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/matt-damon.jpg"], ["showtime", "22-04-2016"], ["created_at", "2016-02-23 17:24:58.667030"], ["updated_at", "2016-02-23 17:24:58.667030"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("title", "image", "showtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Brad Pitt"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/brad-pitt.jpg"], ["showtime", "12-05-2016"], ["created_at", "2016-02-23 17:24:58.669736"], ["updated_at", "2016-02-23 17:24:58.669736"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "theaters" ("name", "image", "seats", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Ocean Wave"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/oceans-11.jpg"], ["seats", 20], ["created_at", "2016-02-23 17:24:58.683735"], ["updated_at", "2016-02-23 17:24:58.683735"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "theaters" ("name", "image", "seats", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Perfect Storm"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/the-perfect-storm.jpg"], ["seats", 36], ["created_at", "2016-02-23 17:24:58.686899"], ["updated_at", "2016-02-23 17:24:58.686899"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "theaters" ("name", "image", "seats", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Rain Forest"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/contagion.jpg"], ["seats", 34], ["created_at", "2016-02-23 17:24:58.690172"], ["updated_at", "2016-02-23 17:24:58.690172"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("title", "image", "showtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "George Clooney"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/george-clooney.jpg"], ["showtime", "23-3-2016"], ["created_at", "2016-02-23 17:26:42.387494"], ["updated_at", "2016-02-23 17:26:42.387494"]]
+  [1m[35m (8.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "movies" ("title", "image", "showtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Matt Damon"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/matt-damon.jpg"], ["showtime", "22-04-2016"], ["created_at", "2016-02-23 17:26:42.401430"], ["updated_at", "2016-02-23 17:26:42.401430"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("title", "image", "showtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Brad Pitt"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/brad-pitt.jpg"], ["showtime", "12-05-2016"], ["created_at", "2016-02-23 17:26:42.404647"], ["updated_at", "2016-02-23 17:26:42.404647"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "theaters" ("name", "image", "seats", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Ocean Wave"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/oceans-11.jpg"], ["seats", 20], ["created_at", "2016-02-23 17:26:42.419765"], ["updated_at", "2016-02-23 17:26:42.419765"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "theaters" ("name", "image", "seats", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Perfect Storm"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/the-perfect-storm.jpg"], ["seats", 36], ["created_at", "2016-02-23 17:26:42.424233"], ["updated_at", "2016-02-23 17:26:42.424233"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "theaters" ("name", "image", "seats", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Rain Forest"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/contagion.jpg"], ["seats", 34], ["created_at", "2016-02-23 17:26:42.428162"], ["updated_at", "2016-02-23 17:26:42.428162"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["theater_id", 4], ["movie_id", 5], ["created_at", "2016-02-23 17:26:42.468850"], ["updated_at", "2016-02-23 17:26:42.468850"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["theater_id", 4], ["movie_id", 6], ["created_at", "2016-02-23 17:26:42.471918"], ["updated_at", "2016-02-23 17:26:42.471918"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["theater_id", 4], ["movie_id", 7], ["created_at", "2016-02-23 17:26:42.473923"], ["updated_at", "2016-02-23 17:26:42.473923"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["theater_id", 5], ["movie_id", 5], ["created_at", "2016-02-23 17:26:42.495327"], ["updated_at", "2016-02-23 17:26:42.495327"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["theater_id", 5], ["movie_id", 7], ["created_at", "2016-02-23 17:26:42.497501"], ["updated_at", "2016-02-23 17:26:42.497501"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["theater_id", 6], ["movie_id", 5], ["created_at", "2016-02-23 17:26:42.501697"], ["updated_at", "2016-02-23 17:26:42.501697"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["theater_id", 6], ["movie_id", 6], ["created_at", "2016-02-23 17:26:42.503807"], ["updated_at", "2016-02-23 17:26:42.503807"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("title", "image", "showtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "George Clooney"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/george-clooney.jpg"], ["showtime", "23-3-2016"], ["created_at", "2016-02-23 17:26:49.615856"], ["updated_at", "2016-02-23 17:26:49.615856"]]
+  [1m[35m (8.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "movies" ("title", "image", "showtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Matt Damon"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/matt-damon.jpg"], ["showtime", "22-04-2016"], ["created_at", "2016-02-23 17:26:49.630663"], ["updated_at", "2016-02-23 17:26:49.630663"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("title", "image", "showtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Brad Pitt"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/brad-pitt.jpg"], ["showtime", "12-05-2016"], ["created_at", "2016-02-23 17:26:49.634518"], ["updated_at", "2016-02-23 17:26:49.634518"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "theaters" ("name", "image", "seats", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Ocean Wave"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/oceans-11.jpg"], ["seats", 20], ["created_at", "2016-02-23 17:26:49.647839"], ["updated_at", "2016-02-23 17:26:49.647839"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "theaters" ("name", "image", "seats", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Perfect Storm"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/the-perfect-storm.jpg"], ["seats", 36], ["created_at", "2016-02-23 17:26:49.651270"], ["updated_at", "2016-02-23 17:26:49.651270"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "theaters" ("name", "image", "seats", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Rain Forest"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/contagion.jpg"], ["seats", 34], ["created_at", "2016-02-23 17:26:49.654252"], ["updated_at", "2016-02-23 17:26:49.654252"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["theater_id", 7], ["movie_id", 8], ["created_at", "2016-02-23 17:26:49.691227"], ["updated_at", "2016-02-23 17:26:49.691227"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["theater_id", 7], ["movie_id", 9], ["created_at", "2016-02-23 17:26:49.694101"], ["updated_at", "2016-02-23 17:26:49.694101"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["theater_id", 7], ["movie_id", 10], ["created_at", "2016-02-23 17:26:49.696534"], ["updated_at", "2016-02-23 17:26:49.696534"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["theater_id", 8], ["movie_id", 8], ["created_at", "2016-02-23 17:26:49.700913"], ["updated_at", "2016-02-23 17:26:49.700913"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["theater_id", 8], ["movie_id", 10], ["created_at", "2016-02-23 17:26:49.702915"], ["updated_at", "2016-02-23 17:26:49.702915"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["theater_id", 9], ["movie_id", 8], ["created_at", "2016-02-23 17:26:49.706945"], ["updated_at", "2016-02-23 17:26:49.706945"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["theater_id", 9], ["movie_id", 9], ["created_at", "2016-02-23 17:26:49.709358"], ["updated_at", "2016-02-23 17:26:49.709358"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+
+
+Started GET "/" for ::1 at 2016-02-23 11:44:15 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (1.6ms)
+Completed 200 OK in 20ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for ::1 at 2016-02-23 11:44:27 -0600
+
+ActionController::RoutingError (No route matches [GET] "/movies"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jingmeichen/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jingmeichen/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jingmeichen/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (83.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (114.7ms)
+
+
+Started GET "/theaters" for ::1 at 2016-02-23 11:44:30 -0600
+
+SyntaxError (/Users/jingmeichen/TheaterApp/theater_app/app/controllers/theaters_controller.rb:4: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/theaters_controller.rb:4: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (91.2ms)
+
+
+Started GET "/theaters" for ::1 at 2016-02-23 11:44:59 -0600
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.4ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 1704ms (Views: 1696.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/theaters" for ::1 at 2016-02-23 11:47:06 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters" for ::1 at 2016-02-23 11:48:19 -0600
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.2ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (require_self can only be called once per source file):
+    2: <html>
+    3: <head>
+    4:   <title>TheaterApp</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css:29
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3734329097316419877_70155638990920'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (97.3ms)
+
+
+Started GET "/theaters" for ::1 at 2016-02-23 11:48:49 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.8ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 75ms (Views: 73.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-a150687ffe1c7c14299c5fc7520c1ccd16cd243faba3e8bf61bca6a6baab74c3.css?body=1" for ::1 at 2016-02-23 11:48:49 -0600
+
+
+Started GET "/theaters" for ::1 at 2016-02-23 12:07:36 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.2ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"theaters"} missing required keys: [:id]):
+    19:       <p> <%= theater.seats %></p>
+    20:     </div>
+    21:     <% end %>
+    22:    <%= link_to "Theaters", theater_path %> 
+    23:   </div>
+    24: </div>
+  app/views/theaters/index.html.erb:22:in `_app_views_theaters_index_html_erb___1379793450069771690_70260096210340'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (110.7ms)
+
+
+Started GET "/theaters" for ::1 at 2016-02-23 12:22:16 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (20.2ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `theater' for #<#<Class:0x007fcd68223e80>:0x007fcd68230158>):
+    19:       <p> <%= theater.seats %></p>
+    20:     </div>
+    21:     <% end %>
+    22:    <%= link_to "Theaters", theater_path(theater) %> 
+    23:   </div>
+    24: </div>
+  app/views/theaters/index.html.erb:22:in `_app_views_theaters_index_html_erb___1379793450069771690_70260096062500'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (94.4ms)
+
+
+Started GET "/theaters" for ::1 at 2016-02-23 12:22:41 -0600
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.2ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 226ms (Views: 225.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/2" for ::1 at 2016-02-23 12:22:48 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered theaters/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `seats' for nil:NilClass):
+     7:         <!-- theater image --> 
+     8:         <%= image_tag @theater.image %>
+     9:         <h3 class="movie-title">  <%= @theater.name %></h3>
+    10:         <p class="movie-release-year"><%= @mtheater.seats %>  </p>
+    11:         
+    12:       </div>
+    13:     </div>
+  app/views/theaters/show.html.erb:10:in `_app_views_theaters_show_html_erb__277381045726313982_70260060586260'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (99.9ms)
+
+
+Started GET "/theaters/2" for ::1 at 2016-02-23 12:22:48 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTheater Load (0.2ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered theaters/show.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `seats' for nil:NilClass):
+     7:         <!-- theater image --> 
+     8:         <%= image_tag @theater.image %>
+     9:         <h3 class="movie-title">  <%= @theater.name %></h3>
+    10:         <p class="movie-release-year"><%= @mtheater.seats %>  </p>
+    11:         
+    12:       </div>
+    13:     </div>
+  app/views/theaters/show.html.erb:10:in `_app_views_theaters_show_html_erb__277381045726313982_70260110547340'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (48.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (110.4ms)
+
+
+Started GET "/theaters" for ::1 at 2016-02-23 12:23:41 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters" for ::1 at 2016-02-23 12:24:15 -0600
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.2ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/1" for ::1 at 2016-02-23 12:24:28 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered theaters/show.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `seats' for nil:NilClass):
+     7:         <!-- theater image --> 
+     8:         <%= image_tag @theater.image %>
+     9:         <h3 class="movie-title">  <%= @theater.name %></h3>
+    10:         <p class="movie-release-year"><%= @mtheater.seats %>  </p>
+    11:         
+    12:       </div>
+    13:     </div>
+  app/views/theaters/show.html.erb:10:in `_app_views_theaters_show_html_erb__277381045726313982_70260060586260'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (91.7ms)
+
+
+Started GET "/theaters/1" for ::1 at 2016-02-23 12:24:28 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTheater Load (0.1ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered theaters/show.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `seats' for nil:NilClass):
+     7:         <!-- theater image --> 
+     8:         <%= image_tag @theater.image %>
+     9:         <h3 class="movie-title">  <%= @theater.name %></h3>
+    10:         <p class="movie-release-year"><%= @mtheater.seats %>  </p>
+    11:         
+    12:       </div>
+    13:     </div>
+  app/views/theaters/show.html.erb:10:in `_app_views_theaters_show_html_erb__277381045726313982_70260110547340'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (103.7ms)
+
+
+Started GET "/theaters" for ::1 at 2016-02-23 12:24:53 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/theaters" for ::1 at 2016-02-23 12:42:30 -0600
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.3ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 155ms (Views: 151.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/movies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-23 12:42:30 -0600
+
+
+Started GET "/movies" for ::1 at 2016-02-23 12:42:40 -0600
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/jingmeichen/TheaterApp/theater_app/app/views/movies/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...link_to "Learn more" movie_path(movie) );@output_buffer.safe...
+...                               ^):
+  app/views/movies/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (102.4ms)
+
+
+Started GET "/movies" for ::1 at 2016-02-23 12:44:18 -0600
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/jingmeichen/TheaterApp/theater_app/app/views/movies/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...link_to "Learn more" movie_path(movie) );@output_buffer.safe...
+...                               ^):
+  app/views/movies/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (98.2ms)
+
+
+Started GET "/movies" for ::1 at 2016-02-23 12:44:53 -0600
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    4: 
+    5:           <!--
+    6:           To do: Loop through movies and display each one with this HTML-->
+    7:           <% @movies.each do |movie| %>
+    8:           <div class="actor col-xs-2">
+    9:              <%= image_tag movies.image %>
+   10:             <h3>  <%= movie.title %> </h3>
+  app/views/movies/index.html.erb:7:in `_app_views_movies_index_html_erb___4032948413051767048_70260099090420'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (102.8ms)
+
+
+Started GET "/movies" for ::1 at 2016-02-23 12:46:27 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (17.9ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined local variable or method `movies' for #<#<Class:0x007fcd655515b0>:0x007fcd65591840>):
+     6:           To do: Loop through movies and display each one with this HTML-->
+     7:           <% @movies.each do |movie| %>
+     8:           <div class="actor col-xs-2">
+     9:              <%= image_tag movies.image %>
+    10:             <h3>  <%= movie.title %> </h3>
+    11:             <p> Showtime: <%= movie.showtime %> </p>
+    12:             <%= link_to "Learn more", movie_path(movie) %>
+  app/views/movies/index.html.erb:9:in `block in _app_views_movies_index_html_erb___4032948413051767048_70260099090420'
+  app/views/movies/index.html.erb:7:in `_app_views_movies_index_html_erb___4032948413051767048_70260099090420'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (95.9ms)
+
+
+Started GET "/movies" for ::1 at 2016-02-23 12:46:46 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/1" for ::1 at 2016-02-23 12:46:52 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTheater Load (0.2ms)[0m  SELECT "theaters".* FROM "theaters" INNER JOIN "orders" ON "theaters"."id" = "orders"."theater_id" WHERE "orders"."movie_id" = ?  [["movie_id", 1]]
+  Rendered movies/show.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 50ms (Views: 39.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/movies/1" for ::1 at 2016-02-23 12:47:03 -0600
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTheater Load (0.1ms)[0m  SELECT "theaters".* FROM "theaters" INNER JOIN "orders" ON "theaters"."id" = "orders"."theater_id" WHERE "orders"."movie_id" = ?  [["movie_id", 1]]
+  Rendered movies/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters" for ::1 at 2016-02-23 12:47:18 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/3" for ::1 at 2016-02-23 12:47:22 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mTheater Load (0.2ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered theaters/show.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `seats' for nil:NilClass):
+     7:         <!-- theater image --> 
+     8:         <%= image_tag @theater.image %>
+     9:         <h3 class="movie-title">  <%= @theater.name %></h3>
+    10:         <p class="movie-release-year"><%= @mtheater.seats %>  </p>
+    11:         
+    12:       </div>
+    13:     </div>
+  app/views/theaters/show.html.erb:10:in `_app_views_theaters_show_html_erb__277381045726313982_70260060586260'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (40.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (89.9ms)
+
+
+Started GET "/theaters/3" for ::1 at 2016-02-23 12:47:23 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered theaters/show.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `seats' for nil:NilClass):
+     7:         <!-- theater image --> 
+     8:         <%= image_tag @theater.image %>
+     9:         <h3 class="movie-title">  <%= @theater.name %></h3>
+    10:         <p class="movie-release-year"><%= @mtheater.seats %>  </p>
+    11:         
+    12:       </div>
+    13:     </div>
+  app/views/theaters/show.html.erb:10:in `_app_views_theaters_show_html_erb__277381045726313982_70260110547340'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (71.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (122.9ms)
+
+
+Started GET "/theaters/" for ::1 at 2016-02-23 12:49:54 -0600
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.2ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/1" for ::1 at 2016-02-23 12:49:57 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered theaters/show.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `seats' for nil:NilClass):
+     7:         <!-- theater image --> 
+     8:         <%= image_tag @theater.image %>
+     9:         <h3 class="movie-title">  <%= @theater.name %></h3>
+    10:         <p class="movie-release-year"><%= @mtheater.seats %>  </p>
+    11:         
+    12:       </div>
+    13:     </div>
+  app/views/theaters/show.html.erb:10:in `_app_views_theaters_show_html_erb__277381045726313982_70260060586260'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (93.8ms)
+
+
+Started GET "/theaters/1" for ::1 at 2016-02-23 12:49:57 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTheater Load (0.1ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered theaters/show.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `seats' for nil:NilClass):
+     7:         <!-- theater image --> 
+     8:         <%= image_tag @theater.image %>
+     9:         <h3 class="movie-title">  <%= @theater.name %></h3>
+    10:         <p class="movie-release-year"><%= @mtheater.seats %>  </p>
+    11:         
+    12:       </div>
+    13:     </div>
+  app/views/theaters/show.html.erb:10:in `_app_views_theaters_show_html_erb__277381045726313982_70260110547340'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (91.1ms)
+
+
+Started GET "/theaters/1" for ::1 at 2016-02-23 12:50:50 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 1]]
+  Rendered theaters/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/theaters/1" for ::1 at 2016-02-23 12:51:02 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 1]]
+  Rendered theaters/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/2" for ::1 at 2016-02-23 12:51:15 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 2]]
+  Rendered theaters/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/1" for ::1 at 2016-02-23 12:51:28 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 1]]
+  Rendered theaters/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/5" for ::1 at 2016-02-23 12:52:19 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 5]]
+  Rendered theaters/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/theaters/5" for ::1 at 2016-02-23 12:52:53 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 5]]
+  Rendered theaters/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-02-23 12:53:30 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (0.9ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-23 12:53:32 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for ::1 at 2016-02-23 12:53:42 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/theaters" for ::1 at 2016-02-23 12:53:49 -0600
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.1ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/theaters" for ::1 at 2016-02-23 12:54:26 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/6" for ::1 at 2016-02-23 12:54:29 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mTheater Load (0.1ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 6]]
+  Rendered theaters/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/9" for ::1 at 2016-02-23 12:54:54 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mTheater Load (0.1ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 9]]
+  Rendered theaters/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/9" for ::1 at 2016-02-23 12:55:27 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mTheater Load (0.2ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 9]]
+  Rendered theaters/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/theaters/9" for ::1 at 2016-02-23 12:55:30 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mTheater Load (0.1ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 9]]
+  Rendered theaters/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/9" for ::1 at 2016-02-23 12:55:35 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mTheater Load (0.1ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 9]]
+  Rendered theaters/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/9" for ::1 at 2016-02-23 12:55:44 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mTheater Load (0.1ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 9]]
+  Rendered theaters/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/" for ::1 at 2016-02-23 12:55:54 -0600
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.2ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/6" for ::1 at 2016-02-23 12:55:56 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 6]]
+  Rendered theaters/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/6" for ::1 at 2016-02-23 12:56:22 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 6]]
+  Rendered theaters/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/theaters/" for ::1 at 2016-02-23 12:56:39 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.3ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/theaters/" for ::1 at 2016-02-23 12:57:13 -0600
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.2ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/1" for ::1 at 2016-02-23 12:57:31 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 1]]
+  Rendered theaters/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/2" for ::1 at 2016-02-23 12:57:37 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 2]]
+  Rendered theaters/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/4" for ::1 at 2016-02-23 12:57:41 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 4]]
+  Rendered theaters/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/9" for ::1 at 2016-02-23 12:57:47 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 9]]
+  Rendered theaters/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/" for ::1 at 2016-02-23 13:41:32 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.8ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/theaters/" for ::1 at 2016-02-23 13:41:36 -0600
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.2ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/1" for ::1 at 2016-02-23 13:41:41 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 1]]
+  Rendered theaters/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-02-24 11:15:09 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 31ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/theaters" for ::1 at 2016-02-24 11:15:14 -0600
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.6ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 406ms (Views: 397.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/theaters/3" for ::1 at 2016-02-24 11:15:18 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 3]]
+  Rendered theaters/show.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 100ms (Views: 53.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/showtimes/11" for ::1 at 2016-02-24 11:15:31 -0600
+
+ActionController::RoutingError (No route matches [GET] "/showtimes/11"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jingmeichen/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jingmeichen/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jingmeichen/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (109.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (130.5ms)
+
+
+Started GET "/theaters" for ::1 at 2016-02-24 11:16:16 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/theaters/9" for ::1 at 2016-02-24 11:16:19 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mTheater Load (0.1ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mMovie Load (8.2ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 9]]
+  Rendered theaters/show.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 29ms (Views: 19.2ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/theaters/7" for ::1 at 2016-02-24 11:16:48 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mTheater Load (0.1ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 7]]
+  Rendered theaters/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateShowtimes (20160224172018)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "showtimes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "month" varchar, "date" varchar, "hour" varchar, "year" varchar, "theater_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160224172018"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_theater_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_theater_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_movie_id' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "movies" ("title", "image", "showtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "George Clooney"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/george-clooney.jpg"], ["showtime", "23-3-2016"], ["created_at", "2016-02-24 17:33:14.725306"], ["updated_at", "2016-02-24 17:33:14.725306"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "movies" ("title", "image", "showtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Matt Damon"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/matt-damon.jpg"], ["showtime", "22-04-2016"], ["created_at", "2016-02-24 17:33:14.731091"], ["updated_at", "2016-02-24 17:33:14.731091"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("title", "image", "showtime", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Brad Pitt"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/brad-pitt.jpg"], ["showtime", "12-05-2016"], ["created_at", "2016-02-24 17:33:14.734049"], ["updated_at", "2016-02-24 17:33:14.734049"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "theaters" ("name", "image", "seats", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Ocean Wave"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/oceans-11.jpg"], ["seats", 20], ["created_at", "2016-02-24 17:33:14.746644"], ["updated_at", "2016-02-24 17:33:14.746644"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "theaters" ("name", "image", "seats", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Perfect Storm"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/the-perfect-storm.jpg"], ["seats", 36], ["created_at", "2016-02-24 17:33:14.750435"], ["updated_at", "2016-02-24 17:33:14.750435"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "theaters" ("name", "image", "seats", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Rain Forest"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/contagion.jpg"], ["seats", 34], ["created_at", "2016-02-24 17:33:14.753374"], ["updated_at", "2016-02-24 17:33:14.753374"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["theater_id", 10], ["movie_id", 11], ["created_at", "2016-02-24 17:33:14.814274"], ["updated_at", "2016-02-24 17:33:14.814274"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["theater_id", 10], ["movie_id", 12], ["created_at", "2016-02-24 17:33:14.817052"], ["updated_at", "2016-02-24 17:33:14.817052"]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["theater_id", 10], ["movie_id", 13], ["created_at", "2016-02-24 17:33:14.818724"], ["updated_at", "2016-02-24 17:33:14.818724"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["theater_id", 11], ["movie_id", 11], ["created_at", "2016-02-24 17:33:14.821778"], ["updated_at", "2016-02-24 17:33:14.821778"]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["theater_id", 11], ["movie_id", 13], ["created_at", "2016-02-24 17:33:14.823321"], ["updated_at", "2016-02-24 17:33:14.823321"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["theater_id", 12], ["movie_id", 11], ["created_at", "2016-02-24 17:33:14.826423"], ["updated_at", "2016-02-24 17:33:14.826423"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "orders" ("theater_id", "movie_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["theater_id", 12], ["movie_id", 12], ["created_at", "2016-02-24 17:33:14.828356"], ["updated_at", "2016-02-24 17:33:14.828356"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "theaters" ("name", "image", "seats", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Space Wave"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/oceans-11.jpg"], ["seats", 20], ["created_at", "2016-02-24 17:33:14.831256"], ["updated_at", "2016-02-24 17:33:14.831256"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "showtimes" ("month", "date", "hour", "year", "theater_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["month", "12"], ["date", "12"], ["hour", "13:00"], ["year", "2016"], ["theater_id", 13], ["created_at", "2016-02-24 17:33:14.840817"], ["updated_at", "2016-02-24 17:33:14.840817"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "showtimes" ("month", "date", "hour", "year", "theater_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["month", "12"], ["date", "9"], ["hour", "12:00"], ["year", "2016"], ["theater_id", 13], ["created_at", "2016-02-24 17:33:14.843427"], ["updated_at", "2016-02-24 17:33:14.843427"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "showtimes" ("month", "date", "hour", "year", "theater_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["month", "10"], ["date", "8"], ["hour", "15:00"], ["year", "2016"], ["theater_id", 13], ["created_at", "2016-02-24 17:33:14.845706"], ["updated_at", "2016-02-24 17:33:14.845706"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "theaters" ("name", "image", "seats", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Space Wave"], ["image", "http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/contagion.jpg"], ["seats", 30], ["created_at", "2016-02-24 17:33:14.848250"], ["updated_at", "2016-02-24 17:33:14.848250"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "showtimes" ("month", "date", "hour", "year", "theater_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["month", "12"], ["date", "12"], ["hour", "13:00"], ["year", "2016"], ["theater_id", 14], ["created_at", "2016-02-24 17:33:14.851458"], ["updated_at", "2016-02-24 17:33:14.851458"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "showtimes" ("month", "date", "hour", "year", "theater_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["month", "12"], ["date", "9"], ["hour", "12:00"], ["year", "2016"], ["theater_id", 14], ["created_at", "2016-02-24 17:33:14.854580"], ["updated_at", "2016-02-24 17:33:14.854580"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "showtimes" ("month", "date", "hour", "year", "theater_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["month", "10"], ["date", "8"], ["hour", "15:00"], ["year", "2016"], ["theater_id", 14], ["created_at", "2016-02-24 17:33:14.857463"], ["updated_at", "2016-02-24 17:33:14.857463"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+
+
+Started GET "/" for ::1 at 2016-02-24 11:41:50 -0600
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/theaters" for ::1 at 2016-02-24 11:41:55 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 37ms (Views: 33.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/theaters/14" for ::1 at 2016-02-24 11:41:58 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mTheater Load (0.2ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 14]]
+  Rendered theaters/show.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `title' for #<Theater:0x007f98258daa58>):
+    27: 
+    28:    <div>
+    29:   <div class="container">
+    30:     <h2><%= @theater.title %></h2>
+    31: 
+    32:     <div class="row">
+    33:       <% @showtimes.each do |showtime| %>
+  app/views/theaters/show.html.erb:30:in `_app_views_theaters_show_html_erb___4072852247020973326_70145745255640'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (110.3ms)
+
+
+Started GET "/theaters/14" for ::1 at 2016-02-24 11:41:59 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mTheater Load (0.1ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 14]]
+  Rendered theaters/show.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `title' for #<Theater:0x007f982a910310>):
+    27: 
+    28:    <div>
+    29:   <div class="container">
+    30:     <h2><%= @theater.title %></h2>
+    31: 
+    32:     <div class="row">
+    33:       <% @showtimes.each do |showtime| %>
+  app/views/theaters/show.html.erb:30:in `_app_views_theaters_show_html_erb___4072852247020973326_70145762873600'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (94.6ms)
+
+
+Started GET "/theaters/14" for ::1 at 2016-02-24 11:42:19 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mTheater Load (0.1ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 14]]
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT "showtimes".* FROM "showtimes" WHERE "showtimes"."theater_id" = ?  [["theater_id", 14]]
+  Rendered theaters/show.html.erb within layouts/application (30.6ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `showtime_path' for #<#<Class:0x007f982a0eaac8>:0x007f9827fa7730>):
+    35:         
+    36:         <h2><%= showtime.month + " " + showtime.date + " " + showtime.hour + " " + showtime.year %></h2>
+    37:         
+    38:         <%= link_to "Showtimes", showtime_path(showtime) %>
+    39:       </div>
+    40:       <% end %>
+    41:     </div>
+  app/views/theaters/show.html.erb:38:in `block in _app_views_theaters_show_html_erb___4072852247020973326_70145741238860'
+  app/views/theaters/show.html.erb:33:in `_app_views_theaters_show_html_erb___4072852247020973326_70145741238860'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (40.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (89.2ms)
+
+
+Started GET "/theaters/" for ::1 at 2016-02-24 11:43:10 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/1" for ::1 at 2016-02-24 11:49:41 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTheater Load (0.6ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 1]]
+  [1m[35mShowtime Load (0.4ms)[0m  SELECT "showtimes".* FROM "showtimes" WHERE "showtimes"."theater_id" = ?  [["theater_id", 1]]
+  Rendered theaters/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 200ms (Views: 169.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/theaters/" for ::1 at 2016-02-24 11:49:50 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/14" for ::1 at 2016-02-24 11:49:53 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mTheater Load (0.2ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 14]]
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT "showtimes".* FROM "showtimes" WHERE "showtimes"."theater_id" = ?  [["theater_id", 14]]
+  Rendered theaters/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/showtimes/4" for ::1 at 2016-02-24 11:49:58 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mShowtime Load (0.2ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered showtimes/show.html.erb within layouts/application (13.4ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `edit_showtime_path' for #<#<Class:0x007f9827e59360>:0x007f9827e511b0>):
+    12:        
+    13:         <h2><%= @showtime.month + " " + @showtime.date + " " + @showtime.hour + " " + @showtime.year %></h2>
+    14:         
+    15:         <%= link_to "Edit", edit_showtime_path(@showtime) %>
+    16:       </div>
+    17:     </div>
+    18:   </div>
+  app/views/showtimes/show.html.erb:15:in `_app_views_showtimes_show_html_erb___819616300931188048_70145740529000'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (111.0ms)
+
+
+Started GET "/showtimes/4" for ::1 at 2016-02-24 11:49:58 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mShowtime Load (0.2ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered showtimes/show.html.erb within layouts/application (13.4ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `edit_showtime_path' for #<#<Class:0x007f9827e59360>:0x007f982a8c2160>):
+    12:        
+    13:         <h2><%= @showtime.month + " " + @showtime.date + " " + @showtime.hour + " " + @showtime.year %></h2>
+    14:         
+    15:         <%= link_to "Edit", edit_showtime_path(@showtime) %>
+    16:       </div>
+    17:     </div>
+    18:   </div>
+  app/views/showtimes/show.html.erb:15:in `_app_views_showtimes_show_html_erb___819616300931188048_70145762789140'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (89.6ms)
+
+
+Started GET "/theaters/14" for ::1 at 2016-02-24 12:08:13 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 14]]
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT "showtimes".* FROM "showtimes" WHERE "showtimes"."theater_id" = ?[0m  [["theater_id", 14]]
+  Rendered theaters/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/showtimes/5" for ::1 at 2016-02-24 12:08:19 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered showtimes/show.html.erb within layouts/application (15.2ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `edit_showtime_path' for #<#<Class:0x007f9827e59360>:0x007f9824335bf8>):
+    12:        
+    13:         <h2><%= @showtime.month + "-" + @showtime.date + "-" + @showtime.hour + "-" + @showtime.year %></h2>
+    14:         
+    15:         <%= link_to "Edit", edit_showtime_path(@showtime) %>
+    16:       </div>
+    17:     </div>
+    18:   </div>
+  app/views/showtimes/show.html.erb:15:in `_app_views_showtimes_show_html_erb___819616300931188048_70145709505640'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (54.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (91.6ms)
+
+
+Started GET "/showtimes/5" for ::1 at 2016-02-24 12:08:19 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered showtimes/show.html.erb within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `edit_showtime_path' for #<#<Class:0x007f9827e59360>:0x007f98287dd238>):
+    12:        
+    13:         <h2><%= @showtime.month + "-" + @showtime.date + "-" + @showtime.hour + "-" + @showtime.year %></h2>
+    14:         
+    15:         <%= link_to "Edit", edit_showtime_path(@showtime) %>
+    16:       </div>
+    17:     </div>
+    18:   </div>
+  app/views/showtimes/show.html.erb:15:in `_app_views_showtimes_show_html_erb___819616300931188048_70145745528260'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (40.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (94.6ms)
+
+
+Started GET "/theaters/14" for ::1 at 2016-02-24 12:09:16 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mTheater Load (0.1ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 14]]
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT "showtimes".* FROM "showtimes" WHERE "showtimes"."theater_id" = ?  [["theater_id", 14]]
+  Rendered theaters/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/showtimes/4" for ::1 at 2016-02-24 12:19:08 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mShowtime Load (0.5ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered showtimes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 23.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/showtimes/5" for ::1 at 2016-02-24 12:19:11 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered showtimes/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/theaters/" for ::1 at 2016-02-24 12:19:21 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.5ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 30ms (Views: 25.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/theaters/14" for ::1 at 2016-02-24 12:19:27 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mTheater Load (0.2ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 14]]
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT "showtimes".* FROM "showtimes" WHERE "showtimes"."theater_id" = ?  [["theater_id", 14]]
+  Rendered theaters/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 54ms (Views: 32.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/showtimes/4" for ::1 at 2016-02-24 12:19:29 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered showtimes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/5" for ::1 at 2016-02-24 12:19:34 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered showtimes/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/theaters/14" for ::1 at 2016-02-24 12:19:55 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 14]]
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT "showtimes".* FROM "showtimes" WHERE "showtimes"."theater_id" = ?[0m  [["theater_id", 14]]
+  Rendered theaters/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/showtimes/4" for ::1 at 2016-02-24 12:19:58 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered showtimes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/4" for ::1 at 2016-02-24 12:20:49 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mShowtime Load (0.2ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered showtimes/show.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/jingmeichen/MyMovieApp/app/views/showtimes/show.html.erb:15: syntax error, unexpected ':', expecting ')'
+...edit_showtime_path(@showtime) :class => 'btn' );@output_buff...
+...                               ^):
+  app/views/showtimes/show.html.erb:15: syntax error, unexpected ':', expecting ')'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (91.4ms)
+
+
+Started GET "/showtimes/4" for ::1 at 2016-02-24 12:21:04 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered showtimes/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/4" for ::1 at 2016-02-24 12:21:29 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered showtimes/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/theaters/14" for ::1 at 2016-02-24 12:21:31 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mTheater Load (0.2ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 14]]
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT "showtimes".* FROM "showtimes" WHERE "showtimes"."theater_id" = ?  [["theater_id", 14]]
+  Rendered theaters/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 27ms (Views: 24.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/showtimes/6" for ::1 at 2016-02-24 12:21:34 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered showtimes/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/6" for ::1 at 2016-02-24 12:21:55 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered showtimes/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/theaters/14" for ::1 at 2016-02-24 12:22:03 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 14]]
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT "showtimes".* FROM "showtimes" WHERE "showtimes"."theater_id" = ?[0m  [["theater_id", 14]]
+  Rendered theaters/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/showtimes/4" for ::1 at 2016-02-24 12:22:05 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered showtimes/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/4" for ::1 at 2016-02-24 12:23:33 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered showtimes/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/theaters/14" for ::1 at 2016-02-24 12:23:42 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mTheater Load (0.1ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 14]]
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT "showtimes".* FROM "showtimes" WHERE "showtimes"."theater_id" = ?  [["theater_id", 14]]
+  Rendered theaters/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/showtimes/5" for ::1 at 2016-02-24 12:23:44 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered showtimes/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/4" for ::1 at 2016-02-24 12:24:22 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mShowtime Load (0.2ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered showtimes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/" for ::1 at 2016-02-24 12:24:31 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/12" for ::1 at 2016-02-24 12:24:34 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mTheater Load (0.1ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mMovie Load (8.8ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 12]]
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT "showtimes".* FROM "showtimes" WHERE "showtimes"."theater_id" = ?  [["theater_id", 12]]
+  Rendered theaters/show.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 36ms (Views: 25.5ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/theaters/12" for ::1 at 2016-02-24 12:24:51 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 12]]
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 12]]
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT "showtimes".* FROM "showtimes" WHERE "showtimes"."theater_id" = ?[0m  [["theater_id", 12]]
+  Rendered theaters/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/theaters/14" for ::1 at 2016-02-24 12:24:55 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mTheater Load (0.1ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 14]]
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT "showtimes".* FROM "showtimes" WHERE "showtimes"."theater_id" = ?  [["theater_id", 14]]
+  Rendered theaters/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/showtimes/5" for ::1 at 2016-02-24 12:25:00 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered showtimes/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/5" for ::1 at 2016-02-24 12:25:39 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered showtimes/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/5" for ::1 at 2016-02-24 12:26:46 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered showtimes/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/5" for ::1 at 2016-02-24 12:26:50 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered showtimes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/" for ::1 at 2016-02-24 12:26:53 -0600
+
+ActionController::RoutingError (No route matches [GET] "/showtimes"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jingmeichen/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jingmeichen/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jingmeichen/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (40.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (89.2ms)
+
+
+Started GET "/theaters" for ::1 at 2016-02-24 12:27:01 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/13" for ::1 at 2016-02-24 12:27:04 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mTheater Load (0.1ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 13]]
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT "showtimes".* FROM "showtimes" WHERE "showtimes"."theater_id" = ?  [["theater_id", 13]]
+  Rendered theaters/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/showtimes/1" for ::1 at 2016-02-24 12:27:07 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered showtimes/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/1" for ::1 at 2016-02-24 12:27:27 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered showtimes/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/movies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-24 12:27:27 -0600
+
+
+Started GET "/assets/theaters.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-24 12:27:27 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-24 12:27:27 -0600
+
+
+Started GET "/assets/showtimes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-24 12:27:27 -0600
+
+
+Started GET "/assets/application.self-6919911b644739f35390afdf66fa9510b93cdc4fef2381f39c3434a657df5c0a.css?body=1" for ::1 at 2016-02-24 12:27:27 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-24 12:27:27 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-24 12:27:27 -0600
+
+
+Started GET "/assets/movies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-24 12:27:27 -0600
+
+
+Started GET "/assets/showtimes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-24 12:27:27 -0600
+
+
+Started GET "/assets/theaters.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-24 12:27:27 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-24 12:27:27 -0600
+
+
+Started GET "/showtimes/1" for ::1 at 2016-02-24 12:28:26 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered showtimes/show.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/jingmeichen/MyMovieApp/app/views/showtimes/show.html.erb:15: syntax error, unexpected ')', expecting =>
+...edit_showtime_path(@showtime) );@output_buffer.safe_append='
+...                               ^
+/Users/jingmeichen/MyMovieApp/app/views/showtimes/show.html.erb:21: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/jingmeichen/MyMovieApp/app/views/showtimes/show.html.erb:23: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/showtimes/show.html.erb:15: syntax error, unexpected ')', expecting =>
+  app/views/showtimes/show.html.erb:21: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/showtimes/show.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (90.9ms)
+
+
+Started GET "/showtimes/1" for ::1 at 2016-02-24 12:28:45 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered showtimes/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/1" for ::1 at 2016-02-24 12:28:59 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered showtimes/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/3" for ::1 at 2016-02-24 12:29:04 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered showtimes/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/3" for ::1 at 2016-02-24 12:29:59 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered showtimes/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/theaters/13" for ::1 at 2016-02-24 12:30:04 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mTheater Load (0.2ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 13]]
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT "showtimes".* FROM "showtimes" WHERE "showtimes"."theater_id" = ?  [["theater_id", 13]]
+  Rendered theaters/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/theaters" for ::1 at 2016-02-24 12:30:06 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.3ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/theaters/11" for ::1 at 2016-02-24 12:30:11 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mTheater Load (0.1ms)[0m  SELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?[0m  [["theater_id", 11]]
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT "showtimes".* FROM "showtimes" WHERE "showtimes"."theater_id" = ?  [["theater_id", 11]]
+  Rendered theaters/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/14" for ::1 at 2016-02-24 12:30:38 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 14]]
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 14]]
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT "showtimes".* FROM "showtimes" WHERE "showtimes"."theater_id" = ?[0m  [["theater_id", 14]]
+  Rendered theaters/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/showtimes/5" for ::1 at 2016-02-24 12:30:39 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered showtimes/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/5/edit" for ::1 at 2016-02-24 12:31:26 -0600
+Processing by ShowtimesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mShowtime Load (0.5ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered showtimes/edit.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 59ms (Views: 57.2ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/showtimes/5" for ::1 at 2016-02-24 12:31:41 -0600
+Processing by ShowtimesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0QuvGUyC6fZGL4UPwq2k9WPj+K2Kl4b3L3lNTKlmVTq2MZe203FwvloLc5KN9Rvz4Y/0BWbVb1On96izdInjYA==", "showtime"=>{"month"=>"12", "date"=>"8", "hour"=>"12:00", "year"=>"2016"}, "commit"=>"Update", "id"=>"5"}
+  [1m[35mShowtime Load (0.2ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "showtimes" SET "date" = ?, "updated_at" = ? WHERE "showtimes"."id" = ?  [["date", "8"], ["updated_at", "2016-02-24 18:31:41.621599"], ["id", 5]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/showtimes/5
+Completed 302 Found in 9ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/showtimes/5" for ::1 at 2016-02-24 12:31:41 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered showtimes/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/5" for ::1 at 2016-02-24 12:35:59 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered showtimes/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/5" for ::1 at 2016-02-24 12:36:35 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered showtimes/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/5" for ::1 at 2016-02-24 12:37:02 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mShowtime Load (0.2ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered showtimes/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/movies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-24 12:37:02 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-24 12:37:02 -0600
+
+
+Started GET "/assets/application.self-6919911b644739f35390afdf66fa9510b93cdc4fef2381f39c3434a657df5c0a.css?body=1" for ::1 at 2016-02-24 12:37:02 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-24 12:37:02 -0600
+
+
+Started GET "/assets/showtimes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-24 12:37:02 -0600
+
+
+Started GET "/assets/theaters.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-24 12:37:02 -0600
+
+
+Started GET "/assets/movies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-24 12:37:02 -0600
+
+
+Started GET "/assets/showtimes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-24 12:37:02 -0600
+
+
+Started GET "/assets/theaters.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-24 12:37:02 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-24 12:37:02 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-24 12:37:02 -0600
+
+
+Started GET "/showtimes/5/edit" for ::1 at 2016-02-24 12:37:03 -0600
+Processing by ShowtimesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered showtimes/edit.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/5" for ::1 at 2016-02-24 12:37:18 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered showtimes/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/theaters.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-24 12:37:18 -0600
+
+
+Started GET "/assets/showtimes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-24 12:37:18 -0600
+
+
+Started GET "/assets/application.self-6919911b644739f35390afdf66fa9510b93cdc4fef2381f39c3434a657df5c0a.css?body=1" for ::1 at 2016-02-24 12:37:18 -0600
+
+
+Started GET "/assets/movies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-24 12:37:18 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-24 12:37:18 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-24 12:37:18 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-24 12:37:18 -0600
+
+
+Started GET "/assets/movies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-24 12:37:18 -0600
+
+
+Started GET "/assets/showtimes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-24 12:37:18 -0600
+
+
+Started GET "/assets/theaters.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-24 12:37:18 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-24 12:37:18 -0600
+
+
+Started GET "/showtimes/5/edit" for ::1 at 2016-02-24 12:37:20 -0600
+Processing by ShowtimesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered showtimes/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/5/edit" for ::1 at 2016-02-24 12:37:31 -0600
+Processing by ShowtimesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered showtimes/edit.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/movies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-24 12:37:31 -0600
+
+
+Started GET "/assets/theaters.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-24 12:37:31 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-24 12:37:31 -0600
+
+
+Started GET "/assets/showtimes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-24 12:37:31 -0600
+
+
+Started GET "/assets/application.self-6919911b644739f35390afdf66fa9510b93cdc4fef2381f39c3434a657df5c0a.css?body=1" for ::1 at 2016-02-24 12:37:31 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-24 12:37:31 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-24 12:37:31 -0600
+
+
+Started GET "/assets/movies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-24 12:37:31 -0600
+
+
+Started GET "/assets/showtimes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-24 12:37:31 -0600
+
+
+Started GET "/assets/theaters.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-24 12:37:31 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-24 12:37:31 -0600
+
+
+Started GET "/showtimes/5/edit" for ::1 at 2016-02-24 12:37:45 -0600
+Processing by ShowtimesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered showtimes/edit.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/5/edit" for ::1 at 2016-02-24 12:37:47 -0600
+Processing by ShowtimesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered showtimes/edit.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/5" for ::1 at 2016-02-24 12:38:30 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered showtimes/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/5/edit" for ::1 at 2016-02-24 12:39:56 -0600
+Processing by ShowtimesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered showtimes/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/theaters" for ::1 at 2016-02-24 12:39:59 -0600
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.2ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/13" for ::1 at 2016-02-24 12:40:02 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 13]]
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT "showtimes".* FROM "showtimes" WHERE "showtimes"."theater_id" = ?[0m  [["theater_id", 13]]
+  Rendered theaters/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/showtimes/1" for ::1 at 2016-02-24 12:40:04 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShowtime Load (0.1ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered showtimes/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/showtimes/1/edit" for ::1 at 2016-02-24 12:40:05 -0600
+Processing by ShowtimesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered showtimes/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.1ms)

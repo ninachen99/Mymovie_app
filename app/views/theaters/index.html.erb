@@ -1,0 +1,25 @@
+<div class="hero">
+  <div class="container">
+    <h2>Black Theater</h2>
+    <p>Our special effects theaters offer you the best movie experiences. </p>
+    <a href="#">Read More</a>
+  </div>
+</div>
+
+<div class="main">
+  <div class="container">
+  <h2>Popular Theaters</h2>
+
+    <!--
+    To do: Loop through movies and display each one with this HTML-->
+    <% @theaters.each do |theater| %>
+    <div class="movie">
+       <%= image_tag theater.image %>
+      <h3> <%= theater.name %> </h3>
+      <p> Seats: <%= theater.seats %></p>
+      <%= link_to "Learn more", theater_path(theater) %> 
+    </div>
+    <% end %>
+   
+  </div>
+</div>
