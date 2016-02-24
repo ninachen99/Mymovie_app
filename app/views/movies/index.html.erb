@@ -1,9 +1,13 @@
 <div class="main actor-index">
       <div class="container">
         <div class="row">
-
+      <div> 
+        <h1>Featured Movies</h1>
+      </div>
+      <br>
           <!--
           To do: Loop through movies and display each one with this HTML-->
+          <div>
           <% @movies.each do |movie| %>
           <div class="actor col-xs-2">
              <%= image_tag movie.image %>
@@ -12,6 +16,8 @@
             <%= link_to "Learn more", movie_path(movie) %>
           </div>
           <% end %>
-          
+          <!--link to add movie page -->
+          <%= link_to 'Add Movie', add_movie_path(@movie) %>
+          </div>
       </div>
 </div>

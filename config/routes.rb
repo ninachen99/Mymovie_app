@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'theaters#index'
   get '/theaters' => 'theaters#index'
   get '/theaters/:id' => 'theaters#show', as: :theater
   get '/movies' => 'movies#index'
@@ -7,6 +8,11 @@ Rails.application.routes.draw do
 
   get '/showtimes/:id/edit' => 'showtimes#edit', as: :edit_showtime
   patch '/showtimes/:id' => 'showtimes#update'
+  
+  resources :movies
+  get '/new' => 'movies#new', as: :add_movie
+  post 'movies' => 'movies#create'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
