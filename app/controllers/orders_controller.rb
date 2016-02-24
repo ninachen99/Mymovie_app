@@ -6,4 +6,19 @@ class OrdersController < ApplicationController
 	def index
 		@order = Order.all
 	end 
+    
+    def create
+    	@order = Order.new(order_params)
+    	if @order.save
+    		redirect_to '/orders'
+    	else
+    		render 'new'
+    	end 
+    end 
+
+
+	private
+	  def order_params
+	  	params.require(:order).permit(:first_name, :last_name, :email, :credit_card, :expiration)
+	  end 
 end
