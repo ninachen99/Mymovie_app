@@ -1,0 +1,14 @@
+<div>
+  <div class="container">
+    <% @orders.each do |order| %>
+    <div>
+      <p><%= order.first_name %></p>
+      <p><%= order.last_name %></p>
+      <p><%= order.email %></p>
+      <p><%= order.credit_card %></p>
+      <p><%= order.expiration %></p>
+    </div>
+    <% end %>
+		<%= link_to 'Buy Ticket', "orders/new" %>
+  </div>
+</div>

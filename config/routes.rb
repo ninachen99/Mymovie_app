@@ -13,6 +13,13 @@ Rails.application.routes.draw do
   get '/new' => 'movies#new', as: :add_movie
   post 'movies' => 'movies#create'
 
+  # order and thank you pages.
+  get '/thanks' => 'pages#thanks'
+  resources :orders
+  get '/orders' => 'orders#index'
+  get '/orders/new' => 'orders#new'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

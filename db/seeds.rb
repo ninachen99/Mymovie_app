@@ -40,6 +40,9 @@ Showtime.create(month: "10", date: "8", hour: "15:00", year: "2016", theater_id:
 
 
 
+# seed the orders
+o1 = Order.create(first_name: "Tom", last_name:"Ford", email: "tom@me.com", credit_card:"4456788", expiration:"12-12-2016", theater_id: t1.id)
 
+o2 = Order.create(first_name: "Tom", last_name:"Ford", email: "tom@me.com", credit_card:"4456788", expiration:"12-12-2016", theater_id: t2.id)
 
 
