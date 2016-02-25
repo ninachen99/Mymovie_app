@@ -24,8 +24,13 @@ ActiveRecord::Schema.define(version: 20160224172018) do
   create_table "orders", force: :cascade do |t|
     t.integer  "movie_id"
     t.integer  "theater_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.string   "credit_card"
+    t.string   "expiration"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   add_index "orders", ["movie_id"], name: "index_orders_on_movie_id"

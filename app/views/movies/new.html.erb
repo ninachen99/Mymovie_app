@@ -1,6 +1,8 @@
-<h1>Add Movies</h1>
 
-<div>
+<div class="add-movie">
+  <h2>Add Movies</h2>
+  <br>
+  <div>
 	<div>
 		<%= form_for(@movie) do |f| %>
 		  <%= f.text_field :title %>
@@ -8,5 +10,5 @@
 		  <%= f.submit "Add Movie", class:"btn btn-primary" %>
 		  <% end %>
 	</div>
+  </div>
 </div>
-

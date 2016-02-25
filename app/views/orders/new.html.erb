@@ -1,9 +1,8 @@
-<div class="jumbotron">
-      <div class="container">
-        <h2>Buy ticket</h2>
-        
-        
-        
+<br>
+<div class="container">
+      <div>
+        <h2>Buy Ticket</h2>
+        <br>
         <!-- order form  -->
         <%= form_for(@order) do |f| %>
          <%= f.text_field :first_name, :placeholder => "First name" %>
@@ -11,7 +10,7 @@
            <%= f.text_field :email, :placeholder => "Email" %>
           <%= f.text_field :credit_card, :placeholder => "Credit card number" %>
            <%= f.text_field :expiration, :placeholder => "expiration date" %>
-          <%= f.submit "Buy", :class => "btn" %>
+          <%= f.submit "Buy", :class => "btn" %> 
         <% end %> 
 
       </div>

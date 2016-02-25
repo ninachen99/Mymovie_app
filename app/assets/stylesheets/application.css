@@ -258,3 +258,8 @@ p.year {
     font-size: 14px;
   }
 }
+
+/* add movie */
+.add-movie {
+  margin: 100px 200px;
+}
