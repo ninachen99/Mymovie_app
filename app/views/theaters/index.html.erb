@@ -9,7 +9,13 @@
 <div class="main">
   <div class="container">
   <h2>Popular Theaters</h2>
-
+  <br>
+  <div>
+    <h3>Popular Movies </h3>
+    <div><h4><%= link_to "Featured Movies", movies_path %></h4></div>
+  </div>
+  <br>
+  
     <!--
     To do: Loop through movies and display each one with this HTML-->
     <% @theaters.each do |theater| %>
