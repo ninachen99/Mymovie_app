@@ -5,6 +5,8 @@
   <div>
 	<div>
 		<%= form_for(@movie) do |f| %>
+		<%= render 'shared/movie_error_messages' %>
+
 		  <%= f.text_field :title %>
 		  <%= f.text_field :showtime %>
 		  <%= f.submit "Add Movie", class:"btn btn-primary" %>

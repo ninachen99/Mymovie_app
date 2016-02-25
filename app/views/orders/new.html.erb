@@ -5,6 +5,8 @@
         <br>
         <!-- order form  -->
         <%= form_for(@order) do |f| %>
+        <%= render 'shared/error_messages' %>
+        
          <%= f.text_field :first_name, :placeholder => "First name" %>
           <%= f.text_field :last_name, :placeholder => "Last name" %>
            <%= f.text_field :email, :placeholder => "Email" %>

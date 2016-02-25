@@ -14,8 +14,7 @@ class MoviesController < ApplicationController
 
 	def create
 		@movie = Movie.new(movie_params)
-		# not final
-		
+	
 		if @movie.save
 
 			#do sth

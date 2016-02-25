@@ -8838,3 +8838,845 @@ Processing by OrdersController#index as HTML
   [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
   Rendered orders/index.html.erb within layouts/application (1.0ms)
 Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-02-25 11:21:56 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.5ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 396ms (Views: 353.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-02-25 11:21:57 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.3ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-40956395f59863cbfe0f7754f3230cd855c118056248754a58e2a91309579717.css?body=1" for ::1 at 2016-02-25 11:21:57 -0600
+
+
+Started GET "/movies" for ::1 at 2016-02-25 11:22:02 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 59ms (Views: 49.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/orders" for ::1 at 2016-02-25 11:22:04 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.6ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 60ms (Views: 49.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-02-25 11:22:05 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (1.5ms)
+  Rendered orders/new.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/jingmeichen/MyMovieApp/app/views/shared/_error_messages.html.erb:12: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/jingmeichen/MyMovieApp/app/views/shared/_error_messages.html.erb:14: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/shared/_error_messages.html.erb:12: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/shared/_error_messages.html.erb:14: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/orders/new.html.erb:8:in `block in _app_views_orders_new_html_erb__1508093297291979790_70247544695060'
+  app/views/orders/new.html.erb:7:in `_app_views_orders_new_html_erb__1508093297291979790_70247544695060'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (64.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (129.3ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-02-25 11:22:06 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (1.0ms)
+  Rendered orders/new.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/jingmeichen/MyMovieApp/app/views/shared/_error_messages.html.erb:12: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/jingmeichen/MyMovieApp/app/views/shared/_error_messages.html.erb:14: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/shared/_error_messages.html.erb:12: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/shared/_error_messages.html.erb:14: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/orders/new.html.erb:8:in `block in _app_views_orders_new_html_erb__1508093297291979790_70247541968280'
+  app/views/orders/new.html.erb:7:in `_app_views_orders_new_html_erb__1508093297291979790_70247541968280'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (90.3ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-02-25 11:23:34 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (12.3ms)
+  Rendered orders/new.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 43ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-02-25 11:23:36 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5Z9xoLcOeFfcbpqjN+9jabtp9FGLk5mpYLEBAMC218iCpUkPKP3hH8BKbD54t9xvOQX4+WfRcA3oP+T/HVlhkg==", "order"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>""}, "commit"=>"Buy"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "orders" ("first_name", "last_name", "email", "credit_card", "expiration", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", ""], ["last_name", ""], ["email", ""], ["credit_card", ""], ["expiration", ""], ["created_at", "2016-02-25 17:23:36.919715"], ["updated_at", "2016-02-25 17:23:36.919715"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 8ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/orders" for ::1 at 2016-02-25 11:23:36 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-02-25 11:23:39 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered orders/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 30ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-02-25 11:23:46 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"55kb6fwkql4uQny/YtgaQWI4in9H8saRg0kGpq/0KmqAoyNGY9czFjJmiiItgKVH4FSG16uwLzULx+NZchucMA==", "order"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>""}, "commit"=>"Buy"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "orders" ("first_name", "last_name", "email", "credit_card", "expiration", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", ""], ["last_name", ""], ["email", ""], ["credit_card", ""], ["expiration", ""], ["created_at", "2016-02-25 17:23:46.354058"], ["updated_at", "2016-02-25 17:23:46.354058"]]
+  [1m[35m (8.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 12ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/orders" for ::1 at 2016-02-25 11:23:46 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-02-25 11:23:56 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered orders/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-02-25 11:23:58 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wgvn1R7Vm1kFNGa6sID2cEjkJgkvt1muV9zf+dLiEj89Md96gSYCERkQkCf/2El2yogqocP1sArfUjoGDw2kZQ==", "order"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>""}, "commit"=>"Buy"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "orders" ("first_name", "last_name", "email", "credit_card", "expiration", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", ""], ["last_name", ""], ["email", ""], ["credit_card", ""], ["expiration", ""], ["created_at", "2016-02-25 17:23:58.990151"], ["updated_at", "2016-02-25 17:23:58.990151"]]
+  [1m[35m (8.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 12ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/orders" for ::1 at 2016-02-25 11:23:59 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/orders" for ::1 at 2016-02-25 11:26:37 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Uwft4qpU/Ysym+k/6ENBnENW1MN84Irr0SChW4/5WIo0PdVNNadkwy6/H6KnG/6awTrYa5CiY09ZrkSkUhbu0A==", "order"=>{"first_name"=>"Nina ", "last_name"=>"C", "email"=>"nina@email.com", "credit_card"=>"34466", "expiration"=>"12-12-2029"}, "commit"=>"Buy"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "orders" ("first_name", "last_name", "email", "credit_card", "expiration", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Nina "], ["last_name", "C"], ["email", "nina@email.com"], ["credit_card", "34466"], ["expiration", "12-12-2029"], ["created_at", "2016-02-25 17:26:37.313121"], ["updated_at", "2016-02-25 17:26:37.313121"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 15ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/orders" for ::1 at 2016-02-25 11:26:37 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-02-25 11:26:49 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered orders/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 29ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-02-25 11:26:55 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered orders/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-02-25 11:26:56 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FA/EGYcz00zLC77AtrgN8sepOaY4omC9O4daBM1+JgNzNfy2GMBKBNcvSF354LL0RcU1DtTgiRmzCb/7EJGQWQ==", "order"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>""}, "commit"=>"Buy"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "orders" ("first_name", "last_name", "email", "credit_card", "expiration", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", ""], ["last_name", ""], ["email", ""], ["credit_card", ""], ["expiration", ""], ["created_at", "2016-02-25 17:26:56.106673"], ["updated_at", "2016-02-25 17:26:56.106673"]]
+  [1m[35m (8.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 12ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/orders" for ::1 at 2016-02-25 11:26:56 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-02-25 11:30:58 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 62ms (Views: 53.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/orders" for ::1 at 2016-02-25 11:31:00 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lJz+rvZS2f1Sqemk76Lq4induArdQwljPlALh04PdVLzpsYBaaFAtU6NHzmg+lXkq7G0ojEB4Me23u54k+DDCA==", "order"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>""}, "commit"=>"Buy"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_error_messages.html.erb (2.6ms)
+  Rendered orders/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 33ms (Views: 27.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders" for ::1 at 2016-02-25 11:33:33 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 38ms (Views: 34.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/movies" for ::1 at 2016-02-25 11:33:36 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 33ms (Views: 27.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/new" for ::1 at 2016-02-25 11:33:38 -0600
+Processing by MoviesController#new as HTML
+  Rendered movies/new.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial shared/_error_message with {:locale=>[:en], :formats=>[:html, :xml], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jingmeichen/MyMovieApp/app/views"
+):
+     5:   <div>
+     6: 	<div>
+     7: 		<%= form_for(@movie) do |f| %>
+     8: 		<%= render 'shared/error_message' %>
+     9: 		  <%= f.text_field :title %>
+    10: 		  <%= f.text_field :showtime %>
+    11: 		  <%= f.submit "Add Movie", class:"btn btn-primary" %>
+  app/views/movies/new.html.erb:8:in `block in _app_views_movies_new_html_erb__3639196986864930090_70247550700840'
+  app/views/movies/new.html.erb:7:in `_app_views_movies_new_html_erb__3639196986864930090_70247550700840'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (106.4ms)
+
+
+Started GET "/new" for ::1 at 2016-02-25 11:33:39 -0600
+Processing by MoviesController#new as HTML
+  Rendered movies/new.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial shared/_error_message with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/jingmeichen/MyMovieApp/app/views"
+):
+     5:   <div>
+     6: 	<div>
+     7: 		<%= form_for(@movie) do |f| %>
+     8: 		<%= render 'shared/error_message' %>
+     9: 		  <%= f.text_field :title %>
+    10: 		  <%= f.text_field :showtime %>
+    11: 		  <%= f.submit "Add Movie", class:"btn btn-primary" %>
+  app/views/movies/new.html.erb:8:in `block in _app_views_movies_new_html_erb__3639196986864930090_70247542510800'
+  app/views/movies/new.html.erb:7:in `_app_views_movies_new_html_erb__3639196986864930090_70247542510800'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (90.0ms)
+
+
+Started GET "/new" for ::1 at 2016-02-25 11:33:58 -0600
+Processing by MoviesController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.4ms)
+  Rendered movies/new.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <% if @order.errors.any? %>
+    2:   <div id="error_details">
+    3:   	<div class="alert alert-danger">
+    4:   		The form contains<%= pluralize(@order.errors.count, "error") %>.
+  app/views/shared/_error_messages.html.erb:1:in `_app_views_shared__error_messages_html_erb__1291526633531628887_70247489775920'
+  app/views/movies/new.html.erb:8:in `block in _app_views_movies_new_html_erb__3639196986864930090_70247544841600'
+  app/views/movies/new.html.erb:7:in `_app_views_movies_new_html_erb__3639196986864930090_70247544841600'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (104.8ms)
+
+
+Started GET "/new" for ::1 at 2016-02-25 11:34:38 -0600
+Processing by MoviesController#new as HTML
+  Rendered shared/_error_messages.html.erb (1.8ms)
+  Rendered movies/new.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <% if @order.errors.any? %>
+    2:   <div id="error_details">
+    3:   	<div class="alert alert-danger">
+    4:   		The form contains<%= pluralize(@order.errors.count, "error") %>.
+  app/views/shared/_error_messages.html.erb:1:in `_app_views_shared__error_messages_html_erb__1291526633531628887_70247489775920'
+  app/views/movies/new.html.erb:8:in `block in _app_views_movies_new_html_erb__3639196986864930090_70247550504180'
+  app/views/movies/new.html.erb:7:in `_app_views_movies_new_html_erb__3639196986864930090_70247550504180'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (40.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (90.5ms)
+
+
+Started GET "/new" for ::1 at 2016-02-25 11:34:41 -0600
+Processing by MoviesController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.3ms)
+  Rendered movies/new.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <% if @order.errors.any? %>
+    2:   <div id="error_details">
+    3:   	<div class="alert alert-danger">
+    4:   		The form contains<%= pluralize(@order.errors.count, "error") %>.
+  app/views/shared/_error_messages.html.erb:1:in `_app_views_shared__error_messages_html_erb__1291526633531628887_70247551539780'
+  app/views/movies/new.html.erb:8:in `block in _app_views_movies_new_html_erb__3639196986864930090_70247551897560'
+  app/views/movies/new.html.erb:7:in `_app_views_movies_new_html_erb__3639196986864930090_70247551897560'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (54.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (92.3ms)
+
+
+Started GET "/new" for ::1 at 2016-02-25 11:34:42 -0600
+Processing by MoviesController#new as HTML
+  Rendered shared/_error_messages.html.erb (1.7ms)
+  Rendered movies/new.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <% if @order.errors.any? %>
+    2:   <div id="error_details">
+    3:   	<div class="alert alert-danger">
+    4:   		The form contains<%= pluralize(@order.errors.count, "error") %>.
+  app/views/shared/_error_messages.html.erb:1:in `_app_views_shared__error_messages_html_erb__1291526633531628887_70247489775920'
+  app/views/movies/new.html.erb:8:in `block in _app_views_movies_new_html_erb__3639196986864930090_70247550504180'
+  app/views/movies/new.html.erb:7:in `_app_views_movies_new_html_erb__3639196986864930090_70247550504180'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (95.7ms)
+
+
+Started GET "/new" for ::1 at 2016-02-25 11:35:10 -0600
+Processing by MoviesController#new as HTML
+  Rendered movies/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for ::1 at 2016-02-25 11:38:42 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/new" for ::1 at 2016-02-25 11:38:44 -0600
+Processing by MoviesController#new as HTML
+  Rendered movies/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for ::1 at 2016-02-25 11:38:45 -0600
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KIbfnEGaI556r/QOgvB2bcCQ32m2vqPYkeKkNi7u061PvOcz3mm61maLApPNqMlrQvzTwVr8SnwZbEHJ8wFl9w==", "movie"=>{"title"=>"", "showtime"=>""}, "commit"=>"Add Movie"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered movies/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 21.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/movies" for ::1 at 2016-02-25 11:38:55 -0600
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CvuoeL/Nd42FWyYxHJnBtUuWq7QWlLzKkufW3yRenJ5twZDXID7uxZl/0KxTwX6zyfqnHPrWVW4aaTMg+bEqxA==", "movie"=>{"title"=>"", "showtime"=>""}, "commit"=>"Add Movie"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered movies/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/movies" for ::1 at 2016-02-25 11:39:16 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders" for ::1 at 2016-02-25 11:39:18 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-02-25 11:39:19 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (3.1ms)
+  Rendered orders/new.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    12: <% end %>
+    13: 
+    14: 
+    15: <% if @movie.errors.any? %>
+    16:   <div id="error_details">
+    17:   	<div class="alert alert-danger">
+    18:   		The form contains<%= pluralize(@order.errors.count, "error") %>.
+  app/views/shared/_error_messages.html.erb:15:in `_app_views_shared__error_messages_html_erb__1291526633531628887_70247542457480'
+  app/views/orders/new.html.erb:8:in `block in _app_views_orders_new_html_erb__1508093297291979790_70247544695060'
+  app/views/orders/new.html.erb:7:in `_app_views_orders_new_html_erb__1508093297291979790_70247544695060'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (111.6ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-02-25 11:39:19 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (3.1ms)
+  Rendered orders/new.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    12: <% end %>
+    13: 
+    14: 
+    15: <% if @movie.errors.any? %>
+    16:   <div id="error_details">
+    17:   	<div class="alert alert-danger">
+    18:   		The form contains<%= pluralize(@order.errors.count, "error") %>.
+  app/views/shared/_error_messages.html.erb:15:in `_app_views_shared__error_messages_html_erb__1291526633531628887_70247543834880'
+  app/views/orders/new.html.erb:8:in `block in _app_views_orders_new_html_erb__1508093297291979790_70247541968280'
+  app/views/orders/new.html.erb:7:in `_app_views_orders_new_html_erb__1508093297291979790_70247541968280'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (96.9ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-02-25 11:40:52 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (1.9ms)
+  Rendered orders/new.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    12: <% end %>
+    13: 
+    14: 
+    15: <% if @movie.errors.any? %>
+    16:   <div id="error_details">
+    17:   	<div class="alert alert-danger">
+    18:   		The form contains<%= pluralize(@order.errors.count, "error") %>.
+  app/views/shared/_error_messages.html.erb:15:in `_app_views_shared__error_messages_html_erb__1291526633531628887_70247543834880'
+  app/views/orders/new.html.erb:8:in `block in _app_views_orders_new_html_erb__1508093297291979790_70247541968280'
+  app/views/orders/new.html.erb:7:in `_app_views_orders_new_html_erb__1508093297291979790_70247541968280'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (102.9ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-02-25 11:41:03 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered orders/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-02-25 11:41:05 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l894iNr0GE6h/x/i9xJFFLTPXkeFYrdJnPwgqvCORBvw9UAnRQeBBr3b6X+4SvoSNqNS72kgXu0UcsVVLWHyQQ==", "order"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>""}, "commit"=>"Buy"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (2.6ms)
+  Rendered orders/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 28ms (Views: 23.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/orders" for ::1 at 2016-02-25 11:41:07 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for ::1 at 2016-02-25 11:41:08 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/new" for ::1 at 2016-02-25 11:41:09 -0600
+Processing by MoviesController#new as HTML
+  Rendered movies/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 39ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for ::1 at 2016-02-25 11:41:10 -0600
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MamECvu5YUz7iaklHjrYe1iaoUKq9rbAU3yf4xMji9tWk7ylZEr4BOetX7hRYmd92vat6ka0X2Tb8noczsw9gQ==", "movie"=>{"title"=>"", "showtime"=>""}, "commit"=>"Add Movie"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered movies/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 38ms (Views: 34.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/movies" for ::1 at 2016-02-25 11:42:07 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2016-02-25 11:42:08 -0600
+Processing by MoviesController#new as HTML
+  Rendered movies/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for ::1 at 2016-02-25 11:42:09 -0600
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uQYkBOR+ficEluXm/P+9dPOIvZI3Y1HmVOZYvGTf4gLePByre43nbxiyE3uzpwJyceSxOtshuELcaL1DuTBUWA==", "movie"=>{"title"=>"", "showtime"=>""}, "commit"=>"Add Movie"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered movies/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 30ms (Views: 26.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/movies" for ::1 at 2016-02-25 11:42:39 -0600
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4VTpHD0eSRkCwQjIqcaDuF0rE7PkvcV6UwtZgSWbPjaGbtGzou3QUR7l/lXmnjy+30cfGwj/LN7bhbx++HSIbA==", "movie"=>{"title"=>"", "showtime"=>""}, "commit"=>"Add Movie"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered movies/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 54ms (Views: 50.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-449e113462b9f74bb2b03094656b9388486d6ac8f027bea5934f391c0b58d72a.css?body=1" for ::1 at 2016-02-25 11:42:39 -0600
+
+
+Started GET "/movies" for ::1 at 2016-02-25 11:42:41 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/movies" for ::1 at 2016-02-25 11:42:41 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/orders" for ::1 at 2016-02-25 11:42:43 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-02-25 11:42:44 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered orders/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-02-25 11:42:46 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eud7BXTWenM/LZL6hlH/ihQX7p6um3s0+2g0KMslVgMd3UOq6yXjOyMJZGfJCUCMlnviNkLZkpBz5tHXFsrgWQ==", "order"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>""}, "commit"=>"Buy"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (2.3ms)
+  Rendered orders/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 36ms (Views: 31.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/orders" for ::1 at 2016-02-25 11:43:31 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders" for ::1 at 2016-02-25 11:43:34 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for ::1 at 2016-02-25 11:43:35 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/new" for ::1 at 2016-02-25 11:43:36 -0600
+Processing by MoviesController#new as HTML
+  Rendered shared/_error_messages.html.erb (2.7ms)
+  Rendered movies/new.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <% if @order.errors.any? %>
+    2:   <div id="error_details">
+    3:   	<div class="alert alert-danger">
+    4:   		The form contains<%= pluralize(@order.errors.count, "error") %>.
+  app/views/shared/_error_messages.html.erb:1:in `_app_views_shared__error_messages_html_erb__1291526633531628887_70247550308840'
+  app/views/movies/new.html.erb:8:in `block in _app_views_movies_new_html_erb__3639196986864930090_70247527819980'
+  app/views/movies/new.html.erb:7:in `_app_views_movies_new_html_erb__3639196986864930090_70247527819980'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (95.5ms)
+
+
+Started GET "/new" for ::1 at 2016-02-25 11:43:37 -0600
+Processing by MoviesController#new as HTML
+  Rendered shared/_error_messages.html.erb (1.9ms)
+  Rendered movies/new.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <% if @order.errors.any? %>
+    2:   <div id="error_details">
+    3:   	<div class="alert alert-danger">
+    4:   		The form contains<%= pluralize(@order.errors.count, "error") %>.
+  app/views/shared/_error_messages.html.erb:1:in `_app_views_shared__error_messages_html_erb__1291526633531628887_70247552469060'
+  app/views/movies/new.html.erb:8:in `block in _app_views_movies_new_html_erb__3639196986864930090_70247542510100'
+  app/views/movies/new.html.erb:7:in `_app_views_movies_new_html_erb__3639196986864930090_70247542510100'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (40.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (90.1ms)
+
+
+Started GET "/new" for ::1 at 2016-02-25 11:45:18 -0600
+Processing by MoviesController#new as HTML
+  Rendered shared/_movie_error_messages.html.erb (0.5ms)
+  Rendered movies/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 23ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for ::1 at 2016-02-25 11:45:19 -0600
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"usPxsGwRpaZagQwzZMOSE0brK/VxFQSXKEq+kVPbBmjd+ckf8+I87kal+q4rmy0VxIcnXZ1X7TOgxFtujjSwMg==", "movie"=>{"title"=>"", "showtime"=>""}, "commit"=>"Add Movie"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_movie_error_messages.html.erb (2.3ms)
+  Rendered movies/new.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <% if @movie.errors.any? %>
+    2:   <div id="error_explanation">
+    3:   	<div class="alert alert-danger">
+    4:   		The form contains<%= pluralize(@order.errors.count, "error") %>.
+    5:   	</div>
+    6:   	<ul>
+    7:   		<% @movie.errors.full_messages.each do |msg| %>
+  app/views/shared/_movie_error_messages.html.erb:4:in `_app_views_shared__movie_error_messages_html_erb___4520794129858888877_70247492570260'
+  app/views/movies/new.html.erb:8:in `block in _app_views_movies_new_html_erb__3639196986864930090_70247543528400'
+  app/views/movies/new.html.erb:7:in `_app_views_movies_new_html_erb__3639196986864930090_70247543528400'
+  app/controllers/movies_controller.rb:23:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (90.1ms)
+
+
+Started GET "/movies" for ::1 at 2016-02-25 11:46:14 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/new" for ::1 at 2016-02-25 11:46:15 -0600
+Processing by MoviesController#new as HTML
+  Rendered shared/_movie_error_messages.html.erb (0.4ms)
+  Rendered movies/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 24ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for ::1 at 2016-02-25 11:46:16 -0600
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m0z+77ktfIsecUeqXKX1ycfNRyA3K2fxbvPn8EEkKQv8dsZAJt7lwwJVsTcT/UrPRaFLiNtpjlXmfQIPnMufUQ==", "movie"=>{"title"=>"", "showtime"=>""}, "commit"=>"Add Movie"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_movie_error_messages.html.erb (1.5ms)
+  Rendered movies/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 42ms (Views: 39.2ms | ActiveRecord: 0.1ms)
