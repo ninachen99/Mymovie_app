@@ -23961,3 +23961,67 @@ Started GET "/assets/bootstrap-sprockets" for ::1 at 2016-02-26 13:53:14 -0600
 
 
 Started GET "/assets/bootstrap" for ::1 at 2016-02-26 13:53:14 -0600
+
+
+Started GET "/" for ::1 at 2016-02-26 14:00:36 -0600
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.9ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 49ms (Views: 46.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2016-02-26 14:00:36 -0600
+
+
+Started GET "/assets/bootstrap" for ::1 at 2016-02-26 14:00:36 -0600
+
+
+Started GET "/" for ::1 at 2016-02-26 14:23:55 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.4ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (24.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 365ms (Views: 344.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2016-02-26 14:23:56 -0600
+
+
+Started GET "/assets/bootstrap" for ::1 at 2016-02-26 14:23:56 -0600
+
+
+Started GET "/movies" for ::1 at 2016-02-26 14:24:43 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 55ms (Views: 47.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/movies" for ::1 at 2016-02-26 14:27:38 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 69ms (Views: 67.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2016-02-26 14:27:38 -0600
+
+
+Started GET "/assets/bootstrap" for ::1 at 2016-02-26 14:27:38 -0600
+
+
+Started GET "/orders/new" for ::1 at 2016-02-26 14:27:42 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (6.5ms)
+  Rendered orders/new.html.erb within layouts/application (35.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 103ms (Views: 75.3ms | ActiveRecord: 0.2ms)
