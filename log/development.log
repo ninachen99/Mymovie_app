@@ -20673,3 +20673,96 @@ Processing by MoviesController#index as HTML
   Rendered layouts/_header.html.erb (0.8ms)
   Rendered layouts/_footer.html.erb (0.3ms)
 Completed 200 OK in 37ms (Views: 32.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-02-25 14:12:48 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.2ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (22.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 338ms (Views: 321.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap" for ::1 at 2016-02-25 14:12:49 -0600
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2016-02-25 14:12:49 -0600
+
+
+Started GET "/movies" for ::1 at 2016-02-25 14:12:50 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 41.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/new" for ::1 at 2016-02-25 14:12:53 -0600
+Processing by MoviesController#new as HTML
+  Rendered shared/_movie_error_messages.html.erb (4.8ms)
+  Rendered movies/new.html.erb within layouts/application (18.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 60ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-25 14:12:54 -0600
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.2ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/theaters/5" for ::1 at 2016-02-25 14:13:12 -0600
+Processing by TheatersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT  "theaters".* FROM "theaters" WHERE "theaters"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" INNER JOIN "orders" ON "movies"."id" = "orders"."movie_id" WHERE "orders"."theater_id" = ?  [["theater_id", 5]]
+  [1m[36mShowtime Load (0.2ms)[0m  [1mSELECT "showtimes".* FROM "showtimes" WHERE "showtimes"."theater_id" = ?[0m  [["theater_id", 5]]
+  Rendered theaters/show.html.erb within layouts/application (27.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 108ms (Views: 52.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/showtimes/5" for ::1 at 2016-02-25 14:13:15 -0600
+Processing by ShowtimesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mShowtime Load (0.2ms)[0m  SELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered showtimes/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 39ms (Views: 36.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/showtimes/5/edit" for ::1 at 2016-02-25 14:13:19 -0600
+Processing by ShowtimesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mShowtime Load (0.1ms)[0m  [1mSELECT  "showtimes".* FROM "showtimes" WHERE "showtimes"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered showtimes/edit.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/movies" for ::1 at 2016-02-25 14:13:26 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-25 14:13:27 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.2ms)
