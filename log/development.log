@@ -23946,3 +23946,18 @@ Started GET "/assets/bootstrap-sprockets" for ::1 at 2016-02-26 13:39:20 -0600
 
 
 Started GET "/assets/bootstrap" for ::1 at 2016-02-26 13:39:20 -0600
+
+
+Started GET "/" for ::1 at 2016-02-26 13:53:14 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.6ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 68ms (Views: 64.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2016-02-26 13:53:14 -0600
+
+
+Started GET "/assets/bootstrap" for ::1 at 2016-02-26 13:53:14 -0600
