@@ -6,9 +6,14 @@
 	<div>
 		<%= form_for(@movie) do |f| %>
 		<%= render 'shared/movie_error_messages' %>
-
+		<br>
+		<ul>
+          <%= f.label :title %>
 		  <%= f.text_field :title %>
+		  <%= f.label :showtime %>
 		  <%= f.text_field :showtime %>
+		</ul>
+		  <br>
 		  <%= f.submit "Add Movie", class:"btn btn-primary" %>
 		  <% end %>
 	</div>

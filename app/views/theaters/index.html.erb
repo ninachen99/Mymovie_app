@@ -6,15 +6,22 @@
   </div>
 </div>
 
-<div class="main">
+<div class="main container">
   <div class="container">
-  <h2>Popular Theaters</h2>
+    <div>
+      <h2>Now Playing: <button class="btn btn-default"><%= link_to "Featured Movies", movies_path %></button></h2>
+    </div>
+</div>
   <br>
   
   <br>
   
     <!--
     To do: Loop through movies and display each one with this HTML-->
+  <div>
+    <h3>Popular Theaters</h3>
+  </div>
+  <br>
     <% @theaters.each do |theater| %>
     <div class="movie">
        <%= image_tag theater.image %>
@@ -24,12 +31,5 @@
     </div>
     <% end %>
    <br>
-
-  <div>
-    
-    <div><h2><%= link_to "Featured Movies", movies_path %></h2></div>
-  </div>
-
   </div>
 </div>
-<br>

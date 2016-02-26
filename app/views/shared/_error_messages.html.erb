@@ -1,16 +1,22 @@
 <% if @order.errors.any? %>
-  <div id="error_details">
+
+  
   	<div class="alert alert-danger">
-  		The form contains<%= pluralize(@order.errors.count, "error") %>.
+  		The form contains <%= pluralize(@order.errors.count, "error") %>.
   	</div>
-  	<ul>
+  	
+  	
   		<% @order.errors.full_messages.each do |msg| %>
-  		<li><%= msg %></li>
-  	</ul>
-  </div>
+  	<div id="error_details">
+  		<li class="order-error-msg"><%= msg %></li>
+  	</div>
+  
+   
+
+
 <% end %>
 <% end %>
 
 
 
-
+<br>
