@@ -24025,3 +24025,101 @@ Processing by OrdersController#new as HTML
   Rendered layouts/_header.html.erb (0.3ms)
   Rendered layouts/_footer.html.erb (0.0ms)
 Completed 200 OK in 103ms (Views: 75.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-02-26 14:45:40 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (1.8ms)
+  Rendered orders/new.html.erb within layouts/application (20.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 106ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2016-02-26 14:45:40 -0600
+
+
+Started GET "/assets/bootstrap" for ::1 at 2016-02-26 14:45:40 -0600
+
+
+Started GET "/" for ::1 at 2016-02-26 14:58:19 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.6ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (28.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 307ms (Views: 286.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2016-02-26 14:58:20 -0600
+
+
+Started GET "/assets/bootstrap" for ::1 at 2016-02-26 14:58:20 -0600
+
+
+Started GET "/" for ::1 at 2016-02-26 16:07:19 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.5ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (24.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 2437ms (Views: 2418.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/custom.self-bbc2ad020590c5dc40ca30f56e07223d2be3854afdbc6050bba7dba428191cd2.css?body=1" for ::1 at 2016-02-26 16:07:22 -0600
+
+
+Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 16:07:22 -0600
+
+
+Started GET "/assets/showtimes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 16:07:22 -0600
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 16:07:22 -0600
+
+
+Started GET "/assets/movies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 16:07:22 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-02-26 16:07:22 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-26 16:07:22 -0600
+
+
+Started GET "/assets/theaters.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-26 16:07:22 -0600
+
+
+Started GET "/assets/movies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 16:07:22 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-26 16:07:22 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-26 16:07:22 -0600
+
+
+Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 16:07:22 -0600
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 16:07:22 -0600
+
+
+Started GET "/assets/showtimes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 16:07:22 -0600
+
+
+Started GET "/assets/theaters.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-26 16:07:22 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-26 16:07:22 -0600
+
+
+Started GET "/movies" for ::1 at 2016-02-26 16:08:13 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 59ms (Views: 52.3ms | ActiveRecord: 0.8ms)
