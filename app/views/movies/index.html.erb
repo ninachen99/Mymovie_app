@@ -17,7 +17,7 @@
             <h3>  <%= movie.title %> </h3>
             <p> Showtime: <%= movie.showtime %> </p>
             <p><%= link_to "Learn more", movie_path(movie) %></p>
-            <p><%= link_to "Buy Ticket", orders_path %></p>
+            <p><%= link_to "Buy Ticket", 'orders/new' %></p>
           </div>
           <% end %>
           
