@@ -2,8 +2,7 @@
 <div class="add-movie">
   <h2>Add Movies</h2>
   <br>
-  <div>
-	<div>
+  
 		<%= form_for(@movie) do |f| %>
 		<%= render 'shared/movie_error_messages' %>
 		<br>
@@ -16,6 +15,5 @@
 		  <br>
 		  <%= f.submit "Add Movie", class:"btn btn-primary" %>
 		  <% end %>
-	</div>
-  </div>
+	
 </div>

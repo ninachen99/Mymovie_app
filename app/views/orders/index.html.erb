@@ -3,23 +3,22 @@
   <div class="container">
     <h2> Order Histroy </h2>
     <br>
+
     <% @orders.each do |order| %>
-    
-    <div>
-      <table>
+      <table id="table-info">
+
         <tr>
-          <td><%= order.first_name %> <%= order.last_name %></td> 
-          <td><%= order.email %></td> 
-          <td><%= order.credit_card %></td>
-          <td> <%= order.expiration %></td>
+
+          <td>Name: <%= order.first_name %> <%= order.last_name %></td> 
+          <td>Email: <%= order.email %></td> 
+          <td>Credit Card: <%= order.credit_card %></td>
+          <td>Expiration: <%= order.expiration %></td>
        </tr>
     </table>
-
-    </div>
     <% end %>
-    <br> 
+    
+
   <div>
-	  <button class="btn btn-success"> <%= link_to 'Buy Ticket', "orders/new" %> </button>
   </div>
 
   </div>

@@ -12,7 +12,7 @@ body, html {
 }
 
 div {
-  color: white;
+  color: #3f5b72;
 }
 
 .header {
@@ -302,5 +302,20 @@ ul#order-form input {
 ul#order-form label {
   display: list-item;
   list-style: none;
- 
+}
+
+/* order table style */
+
+table, th, td {
+   border: 1px solid white;
+
+}
+
+td, tr {
+  width: 200px;
+
+}
+
+#table-info {
+  color: white;
 }
