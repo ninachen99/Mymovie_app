@@ -1,9 +1,9 @@
+<h2>Edit Movie </h2>
 
-<div class="add-movie">
-  <h2>Add Movies</h2>
-  <br>
-  
-		<%= form_for(@movie) do |f| %>
+<div class="row">
+	<div class="col-md-6>">
+		
+	<%= form_for(@movie) do |f| %>
 		<%= render 'shared/movie_error_messages' %>
 		<br>
 		<ul>
@@ -15,7 +15,8 @@
 		  <%= f.text_field :showtime, class:"form-control"%>
 		</ul>
 		  <br>
-		  <%= f.submit "Add Movie", class:"btn btn-primary" %>
+		  <%= f.submit "Update Movie", class:"btn btn-primary" %>
 		  <% end %>
-	
+
+    </div>
 </div>

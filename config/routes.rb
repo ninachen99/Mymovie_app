@@ -9,9 +9,13 @@ Rails.application.routes.draw do
   get '/showtimes/:id/edit' => 'showtimes#edit', as: :edit_showtime
   patch '/showtimes/:id' => 'showtimes#update'
   
+  # movies routes for add, update, delete actions
   resources :movies
   get '/new' => 'movies#new', as: :add_movie
   post 'movies' => 'movies#create'
+  get '/movies/:id/edit' => 'movies#edit'
+  put '/movies/:id' => 'movies#update'
+  delete '/movies/:id' => 'movies#destroy'
 
   # order and thank you pages.
   get '/thanks' => 'pages#thanks'
@@ -20,6 +24,10 @@ Rails.application.routes.draw do
   get '/orders/new' => 'orders#new'
 
   post 'orders' => 'orders#create'
+
+  
+
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

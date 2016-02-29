@@ -17,6 +17,10 @@
             <h3>  <%= movie.title %> </h3>
             <p> Showtime: <%= movie.showtime %> </p>
             <p><%= link_to "Learn more", movie_path(movie) %></p>
+<!--edit and delete movie -->
+            <p><%= link_to 'Edit Movie', edit_movie_path(movie) %></p>
+            <p><%= link_to 'Delete Movie', movie, method: :delete, data: {confirm: "You sure?"} %></p> 
+<!--end of edit movie -->
             <p><%= link_to "Buy Ticket", 'orders/new' %></p>
           </div>
           <% end %>

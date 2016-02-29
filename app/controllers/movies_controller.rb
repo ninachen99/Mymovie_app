@@ -1,4 +1,5 @@
 class MoviesController < ApplicationController
+
 	def index
 		@movies = Movie.all
 	end 
@@ -22,6 +23,26 @@ class MoviesController < ApplicationController
 		else
 			render 'new'
 		end 
+	end 
+
+	def edit
+		@movie = Movie.find(params[:id])
+	end 
+
+	def update
+		@movie = Movie.find(params[:id])
+		if @movie.update_attributes(movie_params)
+			flash[:success] = "Movie updated!"
+			redirect_to [:movies]
+		else
+		    render :edit
+	    end 
+	end 
+
+	def destroy
+		@movie = Movie.find(params[:id])
+		@movie.destroy
+		redirect_to movies_path
 	end 
 
 	private
