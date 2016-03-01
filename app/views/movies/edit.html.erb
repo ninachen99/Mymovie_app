@@ -1,9 +1,9 @@
-<h2>Edit Movie </h2>
+
 
 <div class="container">
 	<div class="col-md-6>">
-		
-	<%= form_for(@movie) do |f| %>
+	 <h2>Edit Movie </h2>
+	 <%= form_for(@movie) do |f| %>
 		<%= render 'shared/movie_error_messages' %>
 		<br>
 		<ul>
@@ -17,6 +17,5 @@
 		  <br>
 		  <%= f.submit "Update Movie", class:"btn btn-primary" %>
 		  <% end %>
-
     </div>
 </div>
