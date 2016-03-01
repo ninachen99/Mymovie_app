@@ -1,49 +1,55 @@
 <div class="main movie-show">
   <div class="container">
+
     <div class="movie">
-      
       <!-- Display the theater's info here -->
       <div class="info">
         <!-- theater image --> 
-        <%= image_tag @theater.image %>
-        <h3 class="movie-title">  <%= @theater.name %></h3>
-        <p class="movie-release-year">Seats:<span> </span><%= @theater.seats %>  </p>
+        <h3 class="movie-title"> <%= @theater.name %></h3>
+        <br>
+        <div class="container">
+         <%= image_tag @theater.image %>
+        </div>
         
+        <div class="container">Seats:<span> </span><%= @theater.seats %></div>
       </div>
     </div>
 
+    
+  <div class="container">
     <h2>Now Playing</h2>
     <!-- Display each movie's info here -->
     <% @movies.each do |movie| %>
-    <div class="actor">
+    <div>
       <!-- movie image -->
       <%= image_tag movie.image %>
-      <h3 class="actor-name">Movie: <%= movie.title %></h3>
-      <p class="actor-bio">Showtime:<span> </span><%= movie.showtime %> </p>
+      <h3 >Movie: <%= movie.title %></h3>
+      <p>Showtime:<span> </span><%= movie.showtime %> </p>
+      <p><%= link_to "Buy Ticket", 'orders/new' %></p>
     </div>
    <% end %>
-
+  </div>
    <!--display showtimes -->
 
-   <div>
+
   <div class="container">
     <!--<h2><%= @theater.name %></h2>-->
-    <p><%= image_tag @theater.image %>
+    <p><%= image_tag @theater.image %></p>
 
-    <div class="row">
+    <div>
       <% @showtimes.each do |showtime| %>
+      <br>
       <div class="card col-xs-4">
         
         <h2><%= showtime.month + "-" + showtime.date + "-" + showtime.hour + "-" + showtime.year %></h2>
         
         <%= link_to "Showtimes", showtime_path(showtime) %>
-        <%= link_to "Buy Ticket", orders_new_path %>
+        <button class="btn btn-default"><%= link_to "Buy Ticket", orders_new_path %></button>
       </div>
       <% end %>
     </div>
-
   </div>
-</div>
+
 
 
   </div>

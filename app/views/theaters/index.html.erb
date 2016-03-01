@@ -24,7 +24,7 @@
   <br>
     <% @theaters.each do |theater| %>
     <div class="movie">
-       <%= image_tag theater.image %>
+      <div> <%= image_tag theater.image %></div>
       <h3> <%= theater.name %> </h3>
       <p> Seats: <%= theater.seats %></p>
       <%= link_to "Learn more", theater_path(theater) %> 

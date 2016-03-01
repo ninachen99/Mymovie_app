@@ -8,11 +8,12 @@
       <table id="table-info">
 
         <tr>
-
+          <td>Age: <%= order.age %></td>
           <td>Name: <%= order.first_name %> <%= order.last_name %></td> 
           <td>Email: <%= order.email %></td> 
           <td>Credit Card: <%= order.credit_card %></td>
           <td>Expiration: <%= order.expiration %></td>
+          <td>Quantity: <%= order.order_quantity %></td>
        </tr>
     </table>
     <% end %>

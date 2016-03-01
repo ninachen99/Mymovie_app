@@ -19,7 +19,7 @@ class OrdersController < ApplicationController
  # setting order limit!!!
     def validate_orders
 
-		if @orders > @available_seat
+		if @order_sum > @available_seat
 			order.errors[:order] << "Sorry, seats are sold out."
 		end
 
@@ -28,7 +28,7 @@ class OrdersController < ApplicationController
 
 	private
 	  def order_params
-	  	params.require(:order).permit(:first_name, :last_name, :email, :credit_card, :expiration)
+	  	params.require(:order).permit(:age, :first_name, :last_name, :email, :credit_card, :expiration, :order_quantity)
 	  end 
 end
 
