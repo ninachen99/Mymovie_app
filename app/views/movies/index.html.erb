@@ -21,7 +21,7 @@
             <p><%= link_to 'Edit Movie', edit_movie_path(movie) %></p>
             <p><%= link_to 'Delete Movie', movie, method: :delete, data: {confirm: "You sure?"} %></p> 
 <!--end of edit movie -->
-            <p><%= link_to "Buy Ticket", 'orders/new' %></p>
+            <button class="btn btn-default"><%= link_to "Buy Ticket", 'orders/new' %></button>
           </div>
           <% end %>
           
