@@ -16,9 +16,11 @@ class Order < ActiveRecord::Base
     end 
 
     def order_limit(movie.theaters)
+        available_seats = theater.seats
     	movie.theaters.each do |theater|
-    		@available_seats += (theater.seats.count - @order_sum)
+    		available_seats += (theater.seats.count - @order_sum)
         end 
+        available_seats
     end 
     
     def orders_sold_out
