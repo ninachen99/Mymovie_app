@@ -5,7 +5,7 @@ class Order < ActiveRecord::Base
     validate :orders_sold_out
     
 	# order limit validate in models - order.rb!!!
-     
+    # get total order
     def order_total
         all_orders = Order.all
         puts all_orders.count
@@ -16,20 +16,20 @@ class Order < ActiveRecord::Base
         end 
         order_sum
     end 
-
+    # get seats left for sale
     def order_limit
         available_seats = 0
-    	Movie.theaters.each do |theater|
+    	Theater.each do |theater|
     		available_seats += (theater.seats.count - order_sum)
         end 
         available_seats
     end 
     
+    # compare order total with seats left
     def orders_sold_out
 
         if order_total >= order_limit
-
-            errors.add(:order_quantity, "all seats are sold out for this movie.")  
+           errors.add(:order_quantity, "all seats are sold out for this movie.")  
         end
     end 
 
