@@ -2,23 +2,25 @@ class Order < ActiveRecord::Base
 	belongs_to :movie
 	belongs_to :theater
 	validates :age, :first_name, :last_name, :email, :credit_card, :expiration, :order_quantity, presence: true
-    validate :orders_sold_out, on: :create
+    validate :orders_sold_out
     
 	# order limit validate in models - order.rb!!!
      
-
-	def order_total(orders)
+    def order_total
+        all_orders = Order.all
+        puts all_orders.count
+        
         order_sum = 0
-        orders.each do |order|
+        all_orders.each do |order|
             order_sum += order.order_quantity
         end 
         order_sum
     end 
 
-    def order_limit(movie.theaters)
-        available_seats = theater.seats
-    	movie.theaters.each do |theater|
-    		available_seats += (theater.seats.count - @order_sum)
+    def order_limit
+        available_seats = 0
+    	Movie.theaters.each do |theater|
+    		available_seats += (theater.seats.count - order_sum)
         end 
         available_seats
     end 

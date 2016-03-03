@@ -36054,3 +36054,543 @@ NoMethodError (undefined method `each' for nil:NilClass):
   Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
   Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
   Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (122.2ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-03 10:30:52 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.7ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 89ms (Views: 87.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-03 10:30:53 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 53ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-03 10:30:55 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GJbpxqvo+1kjeLVi8UAl3eRxCj2vB/7vQm6AECN7hwonS7eRISXXCKBVnIREujc4MybIUc5OAJibebxHWwEk2w==", "order"=>{"age"=>"", "first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>"", "order_quantity"=>""}, "commit"=>"Checkout"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `each' for nil:NilClass):
+  app/models/order.rb:11:in `order_total'
+  app/models/order.rb:24:in `orders_sold_out'
+  app/controllers/orders_controller.rb:13:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (70.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (130.1ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-03 10:33:32 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.7ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 78ms (Views: 76.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-03 10:33:33 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 47ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-03 10:33:34 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6B03IBkUKRyeMXETNyiicBPugEN/zATtX545RzjF+PXXwGl3k9kFTR0cWPWC0rCVxLlCLx6F+pqGiQUQQL9bJA==", "order"=>{"age"=>"", "first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>"", "order_quantity"=>""}, "commit"=>"Checkout"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `each' for nil:NilClass):
+  app/models/order.rb:11:in `order_total'
+  app/models/order.rb:24:in `orders_sold_out'
+  app/controllers/orders_controller.rb:13:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (74.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (171.1ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-03 10:33:50 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-03 10:33:51 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered orders/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 57ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-03 10:33:52 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p/YiZFs3hY6oiuwhiNyV/z6l+VRb+ACSZocCHdt+rSCYK3wz0fqp3yunxcc9Joca6fI7ODqx/uW/kD5KowQO8Q==", "order"=>{"age"=>"", "first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>"", "order_quantity"=>""}, "commit"=>"Checkout"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.1ms)
+
+NoMethodError (undefined method `each' for nil:NilClass):
+  app/models/order.rb:11:in `order_total'
+  app/models/order.rb:24:in `orders_sold_out'
+  app/controllers/orders_controller.rb:13:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (105.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.7ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-03 10:35:02 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 74ms (Views: 72.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-03 10:35:03 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 82ms (Views: 80.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-03 10:35:04 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qlBb4HvFKeEVZoowN7WLVRB4y8PNaaywi6t7K0NNMtmVjQW38QgFsJZLo9aCT5mwxy8Jr6wgUsdSvEd8OzeRCA==", "order"=>{"age"=>"", "first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>"", "order_quantity"=>""}, "commit"=>"Checkout"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `each' for nil:NilClass):
+  app/models/order.rb:11:in `order_total'
+  app/models/order.rb:24:in `orders_sold_out'
+  app/controllers/orders_controller.rb:13:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (136.8ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-03 10:35:29 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.7ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-03 10:35:30 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 66ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-03 10:35:32 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mUff4D6nlf5q7cBfhsxNU/BrvVBPKcrBod0T/l9QqW+mmoG3tGq5r+nA6bkzNl+2Jzx/PC5gNLZ4yi+pJyoKvg==", "order"=>{"age"=>"", "first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>"", "order_quantity"=>""}, "commit"=>"Checkout"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms)
+
+NoMethodError (undefined method `each' for nil:NilClass):
+  app/models/order.rb:11:in `order_total'
+  app/models/order.rb:24:in `orders_sold_out'
+  app/controllers/orders_controller.rb:13:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (78.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (170.6ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-03 10:36:26 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.6ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 76ms (Views: 74.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-03 10:36:27 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-03 10:36:28 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tMOw2uigTRebRZIFyjyK/FjoS/80Girih7wA/CS7thiLHu6NYm1hRhhou+N/xpgZj7+Jk1VT1JVeqzyrXMEVyQ==", "order"=>{"age"=>"", "first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>"", "order_quantity"=>""}, "commit"=>"Checkout"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+NoMethodError (undefined method `each' for nil:NilClass):
+  app/models/order.rb:11:in `order_total'
+  app/models/order.rb:24:in `orders_sold_out'
+  app/controllers/orders_controller.rb:13:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (74.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (154.8ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-03 10:38:19 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (1.1ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 87ms (Views: 84.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-03 10:38:20 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 61ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-03 10:38:22 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rzs5BYuyzaK6SNsiwu0GhCAc4ac8Rg0Q0xTuNdKEohyQ5mdSAX/h8zll8sR3FxRh90sjy10P82cKA9Jiqv4BzQ==", "order"=>{"age"=>"", "first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>"", "order_quantity"=>""}, "commit"=>"Checkout"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `each' for nil:NilClass):
+  app/models/order.rb:11:in `order_total'
+  app/models/order.rb:24:in `orders_sold_out'
+  app/controllers/orders_controller.rb:13:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (110.7ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-03 10:39:12 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-03 10:39:13 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 68ms (Views: 67.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-03 10:39:14 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1TxH/9wKQTalYV7Ce3qLT+nDsD/Ck8RzMZ6cFcCWBbrq4RmoVsdtZyZMdyTOgJmqPpRyU6PaOgToiaBCuOymaw==", "order"=>{"age"=>"", "first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>"", "order_quantity"=>""}, "commit"=>"Checkout"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+NoMethodError (undefined method `each' for nil:NilClass):
+  app/models/order.rb:11:in `order_total'
+  app/models/order.rb:24:in `orders_sold_out'
+  app/controllers/orders_controller.rb:13:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (96.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (188.9ms)
+
+
+Started GET "/" for ::1 at 2016-03-03 10:42:30 -0600
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.9ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (29.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 181ms (Views: 142.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-03 10:42:32 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-03 10:42:33 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dTsXF6+bWSDrjUKHdOJePouhLPx6R6ydvxBCVE29tGlK5klAJVZ1cWiga2HBGEzbXPbukBsOUupmB34DNccXuA==", "order"=>{"age"=>"", "first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>"", "order_quantity"=>""}, "commit"=>"Checkout"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `each' for nil:NilClass):
+  app/models/order.rb:11:in `order_total'
+  app/models/order.rb:24:in `orders_sold_out'
+  app/controllers/orders_controller.rb:13:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (91.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (136.1ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-03 10:47:49 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.6ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 117ms (Views: 114.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-03 10:47:50 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 69ms (Views: 68.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-03 10:47:52 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WFtlKLbAV0hIO9laXFaUunAOs3cWhTi9pKZyoobdHFdnhjt/PA17GcsW8LzprIZfp1lxG3fMxsp9sU71/qe/hg==", "order"=>{"age"=>"", "first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>"", "order_quantity"=>""}, "commit"=>"Checkout"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `each' for nil:NilClass):
+  app/models/order.rb:11:in `order_total'
+  app/models/order.rb:24:in `orders_sold_out'
+  app/controllers/orders_controller.rb:13:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (33.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (99.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (111.4ms)
+
+
+Started GET "/" for ::1 at 2016-03-03 11:00:40 -0600
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (1.4ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 106ms (Views: 94.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-03 11:00:41 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 99ms (Views: 97.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-03 11:00:43 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x8dmduQvXkLfDVxVhWpnLkr4RAclz16GZSuu45GE16P4GjghbuJyE1wgdbMwkHXLna+Ga0SGoPG8PJK06f50cg==", "order"=>{"age"=>"", "first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>"", "order_quantity"=>""}, "commit"=>"Checkout"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `each' for nil:NilClass):
+  app/models/order.rb:11:in `order_total'
+  app/models/order.rb:24:in `orders_sold_out'
+  app/controllers/orders_controller.rb:13:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (144.5ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-03 11:03:03 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 59ms (Views: 57.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-03 11:03:04 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 87ms (Views: 86.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-03 11:03:06 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qp6nzioGgLsQ4+KK8v9lblDdp0BE5okTL96RZltHInKVQ/mZoMus6pPOy2xHBXeLh4plLCWvd2T2ya0xIz2Bow==", "order"=>{"age"=>"", "first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>"", "order_quantity"=>""}, "commit"=>"Checkout"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `each' for nil:NilClass):
+  app/models/order.rb:11:in `order_total'
+  app/models/order.rb:24:in `orders_sold_out'
+  app/controllers/orders_controller.rb:13:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (134.0ms)
