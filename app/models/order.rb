@@ -4,32 +4,28 @@ class Order < ActiveRecord::Base
 	validates :age, :first_name, :last_name, :email, :credit_card, :expiration, presence: true
     validate :order_quantity, if: :orders_sold_out?
     
-	# order limit validate in models - order.rb!!!
+    # order limit validate in models - order.rb!!!
     # get total order
     
     def order_total
         order_sum = 0
         Order.all.each do |order|
-            order_sum += order.order_quantity
+            order_sum += order.order_quantity.to_i
         end 
         order_sum
     end 
     # get seats left for sale
     def order_limit
-        available_seats = 0
-    	Theater.each do |theater|
-    		available_seats += (theater.seats.count - order_sum)
-        end 
-        available_seats
+        available_seats = order.theater.seats
+        available_seats -= order_sum   
     end 
     
     # compare order total with seats left
     def orders_sold_out?
-
         if order_total >= order_limit
            errors.add(:order_quantity, "all seats are sold out for this movie.")  
         end
     end 
-
+    
 	# end of order limit validate!!!
 end
