@@ -16,8 +16,12 @@ class Order < ActiveRecord::Base
     end 
     # get seats left for sale
     def order_limit
-        available_seats = order.theater.seats
-        available_seats -= order_sum   
+        available_seats = 0
+        Theater.all.each do |theater|
+          available_seats = theater.seats.to_i
+          #available_seats -= order_sum
+        end   
+        available_seats 
     end 
     
     # compare order total with seats left

@@ -2,17 +2,27 @@ Rails.application.routes.draw do
   root 'theaters#index'
   get '/theaters' => 'theaters#index'
   get '/theaters/:id' => 'theaters#show', as: :theater
-  get '/movies' => 'movies#index'
-  get '/movies/:id' => 'movies#show', as: :movie
-  get '/showtimes/:id' => 'showtimes#show', as: :showtime
+  resources :theaters
+  get '/new' => 'theaters#new', as: :add_theater
+  post 'theaters' => 'theaters#create'
+  get '/theaters/:id/edit' => 'theaters#edit'
+  put '/theaters/:id' => 'theaters#update'
+  delete '/theaters/:id' => 'theaters#destroy'
 
+
+  
+  
+  get '/showtimes/:id' => 'showtimes#show', as: :showtime
   get '/showtimes/:id/edit' => 'showtimes#edit', as: :edit_showtime
   patch '/showtimes/:id' => 'showtimes#update'
   
   # movies routes for add, update, delete actions
   resources :movies
-  get '/new' => 'movies#new', as: :add_movie
+  get '/movies' => 'movies#index'
+  #get '/movies/:id' => 'movies#show', as: :movie
+  get 'movies/new' => 'movies#new', as: :add_movie
   post 'movies' => 'movies#create'
+  get '/movies/:id' => 'movies#show'
   get '/movies/:id/edit' => 'movies#edit'
   put '/movies/:id' => 'movies#update'
   delete '/movies/:id' => 'movies#destroy'

@@ -1,0 +1,20 @@
+<div class="add-movie">
+  <h2>Add Theaters</h2>
+  <br>
+  
+		<%= form_for(@theater) do |f| %>
+		<%= render 'shared/theater_error_messages' %>
+		<br>
+		<ul>
+		  <%= f.label :image %>
+		  <%= f.file_field :image, class:"form-control" %>
+          <%= f.label :name %>
+		  <%= f.text_field :name, class:"form-control" %>
+		  <%= f.label :seats %>
+		  <%= f.text_field :seats, class:"form-control"%>
+		</ul>
+		  <br>
+		  <%= f.submit "Add Theaters", class:"btn btn-primary" %>
+		  <% end %>
+	
+</div>

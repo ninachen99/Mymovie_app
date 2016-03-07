@@ -8,6 +8,7 @@
 
 <div class="main container">
   <div>
+    <h2><%= link_to 'Add Theater', add_theater_path(@theater) %></h2>
     
       <h2>Now Playing: <button class="btn btn-default"><%= link_to "Featured Movies", movies_path %></button></h2>
     
@@ -28,7 +29,11 @@
       <h3> <%= theater.name %> </h3>
       <p> Seats: <%= theater.seats %></p>
       <%= link_to "Learn more", theater_path(theater) %> 
+
+      <p><%= link_to 'Edit Theater', edit_theater_path(theater) %></p>
+    <p><%= link_to 'Delete Theater', theater, method: :delete, data: {confirm: "You sure?"} %></p> 
     </div>
+    
     <% end %>
    <br>
   </div>

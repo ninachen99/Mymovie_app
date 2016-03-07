@@ -4,13 +4,13 @@ class MoviesController < ApplicationController
 		@movies = Movie.all
 	end 
 
-	def show
-		@movie = Movie.find(params[:id])
-		@theaters = @movie.theaters
-	end 
-
 	def new
 		@movie = Movie.new
+	end 
+    
+    def show
+		@movie = Movie.find(params[:id])
+		@theaters = @movie.theaters
 	end 
 
 	def create
@@ -21,7 +21,7 @@ class MoviesController < ApplicationController
 			#do sth
 			redirect_to '/movies'
 		else
-			render 'new'
+			render '/new'
 		end 
 	end 
 
