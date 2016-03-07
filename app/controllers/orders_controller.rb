@@ -11,13 +11,15 @@ class OrdersController < ApplicationController
     def create
     	@order = Order.new(order_params)
     	
+    	#add mailer
+    	
     	if @order.save 
     		flash[:success] = "Thank you for the order."
+    		OrderMailer.thank_email
     		redirect_to '/orders'
     
         else
-        	render 'new'
-    	
+        	render 'new'	
     	end 
     end 
    

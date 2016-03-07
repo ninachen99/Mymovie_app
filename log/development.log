@@ -42631,3 +42631,1514 @@ Processing by TheatersController#index as HTML
   Rendered layouts/_header.html.erb (0.3ms)
   Rendered layouts/_footer.html.erb (0.0ms)
 Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 14:03:45 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (1.0ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (17.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 134ms (Views: 119.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:03:49 -0600
+
+SyntaxError (/Users/jingmeichen/MyMovieApp/app/controllers/orders_controller.rb:44: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/orders_controller.rb:44: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (135.0ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:03:50 -0600
+
+SyntaxError (/Users/jingmeichen/MyMovieApp/app/controllers/orders_controller.rb:44: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/orders_controller.rb:44: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (128.1ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:04:23 -0600
+
+SyntaxError (/Users/jingmeichen/MyMovieApp/app/controllers/orders_controller.rb:45: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/orders_controller.rb:45: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.3ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:04:34 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 71ms (Views: 52.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-07 14:05:30 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MXnoDR/EWYyzgIZFbaAau/qgDBHl4VCsjCrM41vzsNr5zkvVyTTmGiOh7r+BvEFy0X9YKq62Fn5JZ7zXDJ42/A==", "order"=>{"age"=>"345", "first_name"=>"Mike", "last_name"=>"Apple", "email"=>"ninachen8@me.com", "credit_card"=>"2424", "expiration"=>"24-33-3333", "order_quantity"=>"3"}, "commit"=>"Checkout"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `order_params' for #<OrdersController:0x007fe463af9020>):
+  app/controllers/orders_controller.rb:12:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (142.4ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:06:21 -0600
+
+SyntaxError (/Users/jingmeichen/MyMovieApp/app/controllers/orders_controller.rb:43: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/orders_controller.rb:43: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (92.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (131.7ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:06:29 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.7ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 67ms (Views: 63.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:06:31 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered orders/new.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 72ms (Views: 71.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:06:35 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:06:39 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered orders/new.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-07 14:07:01 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OKj5gGTOSulZqHl/tiqWz4f9yhT3viNQ5QZozHLD/5LwH1pYsj71f8mJEYVaNs0GrCKeL7zpZYIgSxj4Ja55tA==", "order"=>{"age"=>"23", "first_name"=>"Mike", "last_name"=>"Apple", "email"=>"ninachen8@me.com", "credit_card"=>"3434", "expiration"=>"3424", "order_quantity"=>"2"}, "commit"=>"Checkout"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  [1m[35mTheater Load (0.2ms)[0m  SELECT "theaters".* FROM "theaters"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered orders/new.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 406 Not Acceptable in 65ms (Views: 50.7ms | ActiveRecord: 0.7ms)
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/orders_controller.rb:15:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.5ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:07:26 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.3ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 57ms (Views: 53.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:07:27 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-07 14:07:47 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QstOep2pcrPeNvAEs1ThRP/GLKDHhWZNaQlMGtau/X2KfO2iS1nNJU4XmP5fSLqN1Bl4m4zSIJ+sRDwugcN7Ww==", "order"=>{"age"=>"34", "first_name"=>"mike", "last_name"=>"apple", "email"=>"ninachen8@me.com", "credit_card"=>"3444", "expiration"=>"3234", "order_quantity"=>"3"}, "commit"=>"Checkout"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  [1m[36mTheater Load (0.3ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (1.0ms)
+  Rendered orders/new.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 112ms (Views: 90.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-07 14:07:58 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/Lk1esW3m5JyoDQynHyQdAuQV7exlByiUgHm8nkcv6c0DpaiE0ckBOKBXMhwYMu9IE8DjPrDWnCXTJbGLnE5gQ==", "order"=>{"age"=>"34", "first_name"=>"mike", "last_name"=>"apple", "email"=>"ninachen8@me.com", "credit_card"=>"3444", "expiration"=>"3234", "order_quantity"=>"1"}, "commit"=>"Checkout"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered orders/new.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 49ms (Views: 44.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-07 14:08:08 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YlwaQXdkiSHii8vg8dSoOEEGk/Xz5FC3kI/+t9r4jOeq67mZoZQ2t3KqoxodyPPxatnHzrizFmVVwo6DjZUKwQ==", "order"=>{"age"=>"34", "first_name"=>"mike", "last_name"=>"apple", "email"=>"ninachen8@me.com", "credit_card"=>"3444", "expiration"=>"3234", "order_quantity"=>"1"}, "commit"=>"Checkout"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders"
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered orders/new.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 68ms (Views: 62.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:08:21 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for ::1 at 2016-03-07 14:08:22 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 55ms (Views: 48.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:08:25 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered orders/new.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 38ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-07 14:08:45 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+bfne2fVyGpF2EN3M7mkVA52a4pD2EBDfyoqo+yqMSMxAESjsSV3/NX5K43fpf+dJak/sQiPBpG6Z1qXu8e3BQ==", "order"=>{"age"=>"23", "first_name"=>"mike", "last_name"=>"apple", "email"=>"ninachen8@me.com", "credit_card"=>"9494", "expiration"=>"939494", "order_quantity"=>"2"}, "commit"=>"Checkout"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  [1m[35mTheater Load (0.1ms)[0m  SELECT "theaters".* FROM "theaters"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered orders/new.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 57ms (Views: 52.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:08:51 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/orders/23" for ::1 at 2016-03-07 14:08:53 -0600
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"j6qFftlUbkEfDMLChbCMwQPZeVvciBy4s2qwP9x3VqtHHSamD6TR148tqjhprNcIKAYtYJffWmp2J8ALixrQjQ==", "id"=>"23"}
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", 23]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (8.4ms)[0m  [1mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 23]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 14ms (ActiveRecord: 9.3ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:08:53 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/orders/24" for ::1 at 2016-03-07 14:08:55 -0600
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"P2HxJ6XVUsCFbo7Bp8G1S4Dc9Xolin6kWjtfB9GipC331lL/cyXtVhVP5jtL3e6CqwOhQW7dOHafdi8zhs8iCw==", "id"=>"24"}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", 24]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "orders" WHERE "orders"."id" = ?  [["id", 24]]
+  [1m[36m (9.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 12ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:08:55 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/orders/25" for ::1 at 2016-03-07 14:08:57 -0600
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5OekZZWGP9jjgEuOGcfFxUJ1cwW5p3xnt1T7+oTxm2gsUAe9Q3aATnOhI3T1254MaaonPvLwOrVyGYvO05wdTg==", "id"=>"25"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", 25]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 25]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 6ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:08:57 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/orders/26" for ::1 at 2016-03-07 14:08:58 -0600
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3ErTeEVlECTHrJri0cyVFiTntdiO6QrLY7MRPUYCcNgU/XCgk5WvsleN8hg90M7fDzjh48W+TBmm/mEJEW/2/g==", "id"=>"26"}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", 26]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "orders" WHERE "orders"."id" = ?  [["id", 26]]
+  [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 12ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:08:58 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 44ms (Views: 43.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/orders/27" for ::1 at 2016-03-07 14:09:00 -0600
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FeALcvL2wVEshLeCO/BjXfD7y9lyQ+ecoS0c7I5xiMPdV6iqJAZ+x7yl33jX7DiU2ySf4jkUoU5kYGzY2RwO5Q==", "id"=>"27"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", 27]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 27]]
+  [1m[35m (8.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 12ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:09:00 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 71ms (Views: 69.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/orders/28" for ::1 at 2016-03-07 14:09:02 -0600
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kfuxfJi66apb3gE7FsSTEhMWik9aJDhB716F7LFj+LlZTBKkTkpWPMv/acH62MjbOMnedBFzfpMqE/XY5g5+nw==", "id"=>"28"}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", 28]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "orders" WHERE "orders"."id" = ?  [["id", 28]]
+  [1m[36m (8.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 12ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:09:02 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/orders/29" for ::1 at 2016-03-07 14:09:04 -0600
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"igWWpwU4mtm7TZR81ardFbrkpyTtoSDIMsHrQ3zhQxhCsjV/08glTyts/IY5tobckTvzH6b2Zhr3jJt3K4zFPg==", "id"=>"29"}
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", 29]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 29]]
+  [1m[35m (8.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 13ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:09:04 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/orders/30" for ::1 at 2016-03-07 14:09:05 -0600
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dyjtLQN6+E7ykq1Kqd9Tyfa8FHG1cfzg6x3/La4ytem/n0711YpH2GKzxbBFwwgA3WNASv4mujIuUI8Z+V8zzw==", "id"=>"30"}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", 30]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "orders" WHERE "orders"."id" = ?  [["id", 30]]
+  [1m[36m (8.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 13ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:09:05 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:09:06 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered orders/new.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-07 14:09:26 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZLeluiH3UErsbCDzA0toKJ6uK5FCEqhMjxatH1vK0wesAAZi9wfv3HxNSAnvVzPhtXF/qglF7p5KW90rDKdVIQ==", "order"=>{"age"=>"98", "first_name"=>"mike", "last_name"=>"apple", "email"=>"ninachen8@me.com", "credit_card"=>"34455", "expiration"=>"12-22-9393", "order_quantity"=>"2"}, "commit"=>"Checkout"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mOrder Load (2.8ms)[0m  SELECT "orders".* FROM "orders"
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  [1m[35mSQL (7.8ms)[0m  INSERT INTO "orders" ("age", "first_name", "last_name", "email", "credit_card", "expiration", "order_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["age", 98], ["first_name", "mike"], ["last_name", "apple"], ["email", "ninachen8@me.com"], ["credit_card", "34455"], ["expiration", "12-22-9393"], ["order_quantity", 2], ["created_at", "2016-03-07 20:09:26.019260"], ["updated_at", "2016-03-07 20:09:26.019260"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+[ActiveJob]   [1m[35mOrder Load (0.1ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", 32]]
+[ActiveJob] [ActionMailer::DeliveryJob] [faf95842-24e7-4751-84a9-d57106d834f8] Performing ActionMailer::DeliveryJob from Inline(mailers) with arguments: "OrderMailer", "thank_email", "deliver_now", gid://theater-app/Order/32
+[ActiveJob] [ActionMailer::DeliveryJob] [faf95842-24e7-4751-84a9-d57106d834f8]   Rendered order_mailer/thank_email.html.erb within layouts/mailer (3.9ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [faf95842-24e7-4751-84a9-d57106d834f8] 
+OrderMailer#thank_email: processed outbound mail in 22.4ms
+[ActiveJob] [ActionMailer::DeliveryJob] [faf95842-24e7-4751-84a9-d57106d834f8] Performed ActionMailer::DeliveryJob from Inline(mailers) in 24.44ms
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 11.7ms)
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    3:   	 Thank you for your order, <%= @order.first_name %> <%= @order.last_name %>
+    4:     </h1>
+    5:     <p>
+    6:       You have successfully ordered movie: <%= @movie.title %>.
+    7:     <br>
+    8:     </p>
+    9: 
+  app/views/order_mailer/thank_email.html.erb:6:in `_app_views_order_mailer_thank_email_html_erb__2805136006051081190_70309530796780'
+  app/mailers/order_mailer.rb:7:in `thank_email'
+  app/controllers/orders_controller.rb:18:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (21.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (105.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (98.5ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:10:02 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for ::1 at 2016-03-07 14:11:22 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 51ms (Views: 46.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:11:25 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 56ms (Views: 44.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-07 14:11:46 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qel6R1Je1JX1hyH7gml96qZYdcdvke8qBrDURyV37CthXtmfhK5rA2WmSQFudSYjjYch/CTGqfjD/aRzchpqDQ==", "order"=>{"age"=>"87", "first_name"=>"nina", "last_name"=>"chen", "email"=>"ninachen8@me.com", "credit_card"=>"34345", "expiration"=>"98-67-4658", "order_quantity"=>"3"}, "commit"=>"Checkout"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "orders" ("age", "first_name", "last_name", "email", "credit_card", "expiration", "order_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["age", 87], ["first_name", "nina"], ["last_name", "chen"], ["email", "ninachen8@me.com"], ["credit_card", "34345"], ["expiration", "98-67-4658"], ["order_quantity", 3], ["created_at", "2016-03-07 20:11:46.943923"], ["updated_at", "2016-03-07 20:11:46.943923"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+[ActiveJob]   [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", 33]]
+[ActiveJob] [ActionMailer::DeliveryJob] [84be6c0a-ba25-4c0b-b439-9bfce2b5871c] Performing ActionMailer::DeliveryJob from Inline(mailers) with arguments: "OrderMailer", "thank_email", "deliver_now", gid://theater-app/Order/33
+[ActiveJob] [ActionMailer::DeliveryJob] [84be6c0a-ba25-4c0b-b439-9bfce2b5871c]   Rendered order_mailer/thank_email.html.erb within layouts/mailer (0.7ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [84be6c0a-ba25-4c0b-b439-9bfce2b5871c]   Rendered order_mailer/thank_email.text.erb within layouts/mailer (3.9ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [84be6c0a-ba25-4c0b-b439-9bfce2b5871c] 
+OrderMailer#thank_email: processed outbound mail in 27.8ms
+[ActiveJob] [ActionMailer::DeliveryJob] [84be6c0a-ba25-4c0b-b439-9bfce2b5871c] Performed ActionMailer::DeliveryJob from Inline(mailers) in 29.42ms
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 2.0ms)
+
+ActionView::Template::Error (undefined method `first_name' for nil:NilClass):
+    1: Thank you for your order, <%= @user.first_name %> <%= @user.last_name %>
+    2: ===============================================
+    3:  
+    4: 
+  app/views/order_mailer/thank_email.text.erb:1:in `_app_views_order_mailer_thank_email_text_erb___3194867935292026036_70309508914340'
+  app/mailers/order_mailer.rb:7:in `thank_email'
+  app/controllers/orders_controller.rb:18:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (71.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (113.0ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:12:13 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for ::1 at 2016-03-07 14:12:16 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:12:19 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-07 14:12:47 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VUHd/ktkgfXPcVTzkjrN31lFyTt/nCp7ccWLKDqZJi6d9n4mnZQ+Y19QPAl+JpYWcpqdADTLbKm0iPscbfSgCA==", "order"=>{"age"=>"76", "first_name"=>"tom", "last_name"=>"foo", "email"=>"ninachen8@me.com", "credit_card"=>"76868", "expiration"=>"12-38-4748", "order_quantity"=>"4"}, "commit"=>"Checkout"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mOrder Load (0.3ms)[0m  SELECT "orders".* FROM "orders"
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "orders" ("age", "first_name", "last_name", "email", "credit_card", "expiration", "order_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["age", 76], ["first_name", "tom"], ["last_name", "foo"], ["email", "ninachen8@me.com"], ["credit_card", "76868"], ["expiration", "12-38-4748"], ["order_quantity", 4], ["created_at", "2016-03-07 20:12:47.571125"], ["updated_at", "2016-03-07 20:12:47.571125"]]
+  [1m[36m (8.5ms)[0m  [1mcommit transaction[0m
+[ActiveJob]   [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", 34]]
+[ActiveJob] [ActionMailer::DeliveryJob] [7d1cc11a-17b7-406d-8040-3fbde53c5a20] Performing ActionMailer::DeliveryJob from Inline(mailers) with arguments: "OrderMailer", "thank_email", "deliver_now", gid://theater-app/Order/34
+[ActiveJob] [ActionMailer::DeliveryJob] [7d1cc11a-17b7-406d-8040-3fbde53c5a20]   Rendered order_mailer/thank_email.html.erb within layouts/mailer (0.8ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [7d1cc11a-17b7-406d-8040-3fbde53c5a20]   Rendered order_mailer/thank_email.text.erb within layouts/mailer (0.7ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [7d1cc11a-17b7-406d-8040-3fbde53c5a20] 
+OrderMailer#thank_email: processed outbound mail in 277.4ms
+[ActiveJob] [ActionMailer::DeliveryJob] [7d1cc11a-17b7-406d-8040-3fbde53c5a20] 
+Sent mail to ninachen8@me.com (15.0ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [7d1cc11a-17b7-406d-8040-3fbde53c5a20] Date: Mon, 07 Mar 2016 14:12:47 -0600
+From: ninachen8@me.com
+To: ninachen8@me.com
+Message-ID: <56dde0bfd6489_41643ff236881400984cd@JINGMEIs-MacBook-Air.local.mail>
+Subject: Thank you for your order!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_56dde0bfce0bd_41643ff236881400983bf";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_56dde0bfce0bd_41643ff236881400983bf
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for your order, tom foo
+===============================================
+ 
+
+
+Thanks for ordering and have a great day!
+
+----==_mimepart_56dde0bfce0bd_41643ff236881400983bf
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <div class="container">
+    <h1>
+  	 Thank you for your order, tom foo
+    </h1>
+    
+
+    <p>Thanks for ordering and have a great day!</p>
+</div>
+  </body>
+</html>
+
+----==_mimepart_56dde0bfce0bd_41643ff236881400983bf--
+
+[ActiveJob] [ActionMailer::DeliveryJob] [7d1cc11a-17b7-406d-8040-3fbde53c5a20] Performed ActionMailer::DeliveryJob from Inline(mailers) in 294.1ms
+[ActiveJob] Enqueued ActionMailer::DeliveryJob (Job ID: 7d1cc11a-17b7-406d-8040-3fbde53c5a20) to Inline(mailers) with arguments: "OrderMailer", "thank_email", "deliver_now", gid://theater-app/Order/34
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 325ms (ActiveRecord: 9.7ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:12:47 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:32:10 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered orders/new.html.erb within layouts/application (13.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 119ms (Views: 94.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/movies" for ::1 at 2016-03-07 14:32:11 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 55ms (Views: 49.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:32:12 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 71ms (Views: 70.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-07 14:32:46 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eZ14nvuIF+YZnlvw4sABMVRH657tpTc9/n9fvyXUOMGxKttGLXiocIm/MwoO3Fr4f5i/pabyce87Mi+Lcrm+5w==", "order"=>{"age"=>"98", "first_name"=>"john", "last_name"=>"doe", "email"=>"ninachen8@me.com", "credit_card"=>"998", "expiration"=>"8800", "order_quantity"=>"4"}, "commit"=>"Checkout"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
+  [1m[36mTheater Load (0.3ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "orders" ("age", "first_name", "last_name", "email", "credit_card", "expiration", "order_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["age", 98], ["first_name", "john"], ["last_name", "doe"], ["email", "ninachen8@me.com"], ["credit_card", "998"], ["expiration", "8800"], ["order_quantity", 4], ["created_at", "2016-03-07 20:32:46.697115"], ["updated_at", "2016-03-07 20:32:46.697115"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+[ActiveJob]   [1m[35mOrder Load (0.2ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", 35]]
+[ActiveJob] [ActionMailer::DeliveryJob] [dc722ce6-b9e4-4d46-bc19-dd38cc547e33] Performing ActionMailer::DeliveryJob from Inline(mailers) with arguments: "OrderMailer", "thank_email", "deliver_now", gid://theater-app/Order/35
+[ActiveJob] [ActionMailer::DeliveryJob] [dc722ce6-b9e4-4d46-bc19-dd38cc547e33]   Rendered order_mailer/thank_email.html.erb within layouts/mailer (0.2ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [dc722ce6-b9e4-4d46-bc19-dd38cc547e33]   Rendered order_mailer/thank_email.text.erb within layouts/mailer (0.2ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [dc722ce6-b9e4-4d46-bc19-dd38cc547e33] 
+OrderMailer#thank_email: processed outbound mail in 28.7ms
+[ActiveJob] [ActionMailer::DeliveryJob] [dc722ce6-b9e4-4d46-bc19-dd38cc547e33] 
+Sent mail to ninachen8@me.com (8.0ms)
+[ActiveJob] [ActionMailer::DeliveryJob] [dc722ce6-b9e4-4d46-bc19-dd38cc547e33] Date: Mon, 07 Mar 2016 14:32:46 -0600
+From: ninachen8@me.com
+To: ninachen8@me.com
+Message-ID: <56dde56ebb13c_41643ff23652c9e498663@JINGMEIs-MacBook-Air.local.mail>
+Subject: Thank you for your order!
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_56dde56eb9006_41643ff23652c9e4985c7";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_56dde56eb9006_41643ff23652c9e4985c7
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for your order, john doe
+===============================================
+ 
+
+
+Thanks for ordering and have a great day!
+
+----==_mimepart_56dde56eb9006_41643ff23652c9e4985c7
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <div class="container">
+    <h1>
+  	 Thank you for your order, john doe
+    </h1>
+    
+
+    <p>Thanks for ordering and have a great day!</p>
+</div>
+  </body>
+</html>
+
+----==_mimepart_56dde56eb9006_41643ff23652c9e4985c7--
+
+[ActiveJob] [ActionMailer::DeliveryJob] [dc722ce6-b9e4-4d46-bc19-dd38cc547e33] Performed ActionMailer::DeliveryJob from Inline(mailers) in 39.82ms
+[ActiveJob] Enqueued ActionMailer::DeliveryJob (Job ID: dc722ce6-b9e4-4d46-bc19-dd38cc547e33) to Inline(mailers) with arguments: "OrderMailer", "thank_email", "deliver_now", gid://theater-app/Order/35
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 103ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:32:46 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_theater_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_theater_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_orders_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_orders_on_movie_id' AND type='index'
+
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:48:21 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (10.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 67ms (Views: 62.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:48:22 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for ::1 at 2016-03-07 14:48:23 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 112ms (Views: 106.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 14:48:24 -0600
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.2ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 55ms (Views: 47.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 14:51:17 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.4ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 56ms (Views: 50.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:51:18 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 56ms (Views: 46.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-07 14:51:45 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PsIWzSPv8nTF6GPkxFoCeys8UPulyueExzXvnhS01mz2dbUV9R9N4lXJCx4oRlmyAOMEwO6doVYCeJ+qQ9lQSg==", "order"=>{"age"=>"98", "first_name"=>"nina", "last_name"=>"chen", "email"=>"ninachen8@me.com", "credit_card"=>"98789", "expiration"=>"999", "order_quantity"=>"3"}, "commit"=>"Checkout"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  [1m[35mTheater Load (0.1ms)[0m  SELECT "theaters".* FROM "theaters"
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "orders" ("age", "first_name", "last_name", "email", "credit_card", "expiration", "order_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 98], ["first_name", "nina"], ["last_name", "chen"], ["email", "ninachen8@me.com"], ["credit_card", "98789"], ["expiration", "999"], ["order_quantity", 3], ["created_at", "2016-03-07 20:51:45.444297"], ["updated_at", "2016-03-07 20:51:45.444297"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.9ms)
+
+SyntaxError (/Users/jingmeichen/MyMovieApp/app/mailers/order_mailer.rb:6: syntax error, unexpected ':', expecting keyword_end
+			to: @order.email
+			   ^
+/Users/jingmeichen/MyMovieApp/app/mailers/order_mailer.rb:7: syntax error, unexpected ':', expecting keyword_end
+			from: 'ninachen8@me.com'
+			     ^
+/Users/jingmeichen/MyMovieApp/app/mailers/order_mailer.rb:8: syntax error, unexpected ':', expecting keyword_end
+		    subject: 'Thank you for your order!'
+		            ^):
+  app/mailers/order_mailer.rb:6: syntax error, unexpected ':', expecting keyword_end
+  app/mailers/order_mailer.rb:7: syntax error, unexpected ':', expecting keyword_end
+  app/mailers/order_mailer.rb:8: syntax error, unexpected ':', expecting keyword_end
+  app/controllers/orders_controller.rb:18:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (143.6ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:52:24 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (9.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 56ms (Views: 50.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies" for ::1 at 2016-03-07 14:52:26 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 57ms (Views: 51.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:52:28 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 84ms (Views: 82.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-07 14:52:44 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VECkUBt3R83yTg/+BHYLS4AzA8RAq2NxcfxMY+Mzji+c9weIzYf4W2JvZwToalCCq+xX/wv8JaO0sTxXtF4ICQ==", "order"=>{"age"=>"98", "first_name"=>"nina", "last_name"=>"chen", "email"=>"ninachen8@me.com", "credit_card"=>"876", "expiration"=>"993", "order_quantity"=>"2"}, "commit"=>"Checkout"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "orders" ("age", "first_name", "last_name", "email", "credit_card", "expiration", "order_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["age", 98], ["first_name", "nina"], ["last_name", "chen"], ["email", "ninachen8@me.com"], ["credit_card", "876"], ["expiration", "993"], ["order_quantity", 2], ["created_at", "2016-03-07 20:52:45.019594"], ["updated_at", "2016-03-07 20:52:45.019594"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 2.0ms)
+
+SyntaxError (/Users/jingmeichen/MyMovieApp/app/mailers/order_mailer.rb:6: syntax error, unexpected ':', expecting keyword_end
+			to: @order.email
+			   ^
+/Users/jingmeichen/MyMovieApp/app/mailers/order_mailer.rb:7: syntax error, unexpected ':', expecting keyword_end
+			from: 'ninachen8@me.com'
+			     ^
+/Users/jingmeichen/MyMovieApp/app/mailers/order_mailer.rb:8: syntax error, unexpected ':', expecting keyword_end
+		    subject: 'Thank you for your order!'
+		            ^):
+  app/mailers/order_mailer.rb:6: syntax error, unexpected ':', expecting keyword_end
+  app/mailers/order_mailer.rb:7: syntax error, unexpected ':', expecting keyword_end
+  app/mailers/order_mailer.rb:8: syntax error, unexpected ':', expecting keyword_end
+  app/controllers/orders_controller.rb:18:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (113.8ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:53:26 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 71ms (Views: 66.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/movies" for ::1 at 2016-03-07 14:53:28 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (10.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 51ms (Views: 46.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:53:32 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-07 14:53:53 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vv4q8HEhBt/MwzSld7QuD67F8RnArkqNfSJAmRcJg7qeSYkop9G5SVziXF+bqHXGhRqlIov5DF+4bzCtQGQFnA==", "order"=>{"age"=>"78", "first_name"=>"nina", "last_name"=>"c", "email"=>"ninachen8@me.com", "credit_card"=>"878", "expiration"=>"7879", "order_quantity"=>"2"}, "commit"=>"Checkout"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  [1m[35mTheater Load (0.2ms)[0m  SELECT "theaters".* FROM "theaters"
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "orders" ("age", "first_name", "last_name", "email", "credit_card", "expiration", "order_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 78], ["first_name", "nina"], ["last_name", "c"], ["email", "ninachen8@me.com"], ["credit_card", "878"], ["expiration", "7879"], ["order_quantity", 2], ["created_at", "2016-03-07 20:53:53.670392"], ["updated_at", "2016-03-07 20:53:53.670392"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+[ActiveJob]   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", 38]]
+[ActiveJob] [ActionMailer::DeliveryJob] [c21fae3c-bd3d-40ae-8756-9a8b6f87abd6] Performing ActionMailer::DeliveryJob from Inline(mailers) with arguments: "OrderMailer", "thank_email", "deliver_now", gid://theater-app/Order/38
+[ActiveJob] [ActionMailer::DeliveryJob] [c21fae3c-bd3d-40ae-8756-9a8b6f87abd6] 
+OrderMailer#thank_email: processed outbound mail in 1.7ms
+[ActiveJob] [ActionMailer::DeliveryJob] [c21fae3c-bd3d-40ae-8756-9a8b6f87abd6] Performed ActionMailer::DeliveryJob from Inline(mailers) in 3.02ms
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 2.3ms)
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/mailers/order_mailer.rb:4:in `thank_email'
+  app/controllers/orders_controller.rb:18:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.3ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (114.3ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:54:10 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 59ms (Views: 55.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:54:11 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered orders/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-07 14:54:13 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rVumIq50uEtG3pWh++knpUqGrYRdpSEzm/43f/dnj4tl7AX6eIQH3db//VsX9XxsYVn5vxbyZ+Fes0dLoAoJrQ==", "order"=>{"age"=>"", "first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>"", "order_quantity"=>""}, "commit"=>"Checkout"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (3.4ms)
+  Rendered orders/new.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 70ms (Views: 56.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-07 14:54:31 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XCt/AQKHVhv9vJMEfev0Xr5FhhjDSsfwb4+POhigc5aUnNzZ1HfpjW2d+/6R96+XlZrSI4gdgSKqwv8OT831sA==", "order"=>{"age"=>"89", "first_name"=>"nina", "last_name"=>"chen", "email"=>"ninachen8@me.com", "credit_card"=>"99", "expiration"=>"99", "order_quantity"=>"1"}, "commit"=>"Checkout"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mOrder Load (0.3ms)[0m  SELECT "orders".* FROM "orders"
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "orders" ("age", "first_name", "last_name", "email", "credit_card", "expiration", "order_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["age", 89], ["first_name", "nina"], ["last_name", "chen"], ["email", "ninachen8@me.com"], ["credit_card", "99"], ["expiration", "99"], ["order_quantity", 1], ["created_at", "2016-03-07 20:54:31.747238"], ["updated_at", "2016-03-07 20:54:31.747238"]]
+  [1m[36m (8.7ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 9.8ms)
+
+SyntaxError (/Users/jingmeichen/MyMovieApp/app/mailers/order_mailer.rb:4: formal argument cannot be an instance variable
+	def thank_email(@order)
+	                      ^):
+  app/mailers/order_mailer.rb:4: formal argument cannot be an instance variable
+  app/controllers/orders_controller.rb:18:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.2ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (110.4ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:55:15 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 53ms (Views: 48.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies" for ::1 at 2016-03-07 14:55:17 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 62ms (Views: 56.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:55:22 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered orders/new.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 44ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-07 14:55:37 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G038kNsanzDcJgdLa7q0pBBqb8WczrMhWjbb8qAPe0rT+l9IDeogpkwHb7GHpu9tO7U7/teZ9fOfe6vG92L9bA==", "order"=>{"age"=>"89", "first_name"=>"nina", "last_name"=>"c", "email"=>"ninachen8@me.com", "credit_card"=>"89", "expiration"=>"89", "order_quantity"=>"1"}, "commit"=>"Checkout"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  [1m[35mTheater Load (0.2ms)[0m  SELECT "theaters".* FROM "theaters"
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "orders" ("age", "first_name", "last_name", "email", "credit_card", "expiration", "order_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 89], ["first_name", "nina"], ["last_name", "c"], ["email", "ninachen8@me.com"], ["credit_card", "89"], ["expiration", "89"], ["order_quantity", 1], ["created_at", "2016-03-07 20:55:37.137470"], ["updated_at", "2016-03-07 20:55:37.137470"]]
+  [1m[35m (8.7ms)[0m  commit transaction
+[ActiveJob]   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", 40]]
+[ActiveJob] [ActionMailer::DeliveryJob] [9e258e81-c3cf-4e7a-ab8f-5d186c0341bc] Performing ActionMailer::DeliveryJob from Inline(mailers) with arguments: "OrderMailer", "thank_email", "deliver_now", gid://theater-app/Order/40
+[ActiveJob] [ActionMailer::DeliveryJob] [9e258e81-c3cf-4e7a-ab8f-5d186c0341bc] 
+OrderMailer#thank_email: processed outbound mail in 3.0ms
+[ActiveJob] [ActionMailer::DeliveryJob] [9e258e81-c3cf-4e7a-ab8f-5d186c0341bc] Performed ActionMailer::DeliveryJob from Inline(mailers) in 4.97ms
+[ActiveJob] Enqueued ActionMailer::DeliveryJob (Job ID: 9e258e81-c3cf-4e7a-ab8f-5d186c0341bc) to Inline(mailers) with arguments: "OrderMailer", "thank_email", "deliver_now", gid://theater-app/Order/40
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 54ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:55:37 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 42ms (Views: 41.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/orders/40" for ::1 at 2016-03-07 14:59:22 -0600
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eYHb6pT9+OidRm/FSqIOHpxv7s19bNqRSptpfpM0fFWxNngyQg1Hfg1nBz+mvlXXt7C69jY7nEOP1hlKxFn6cw==", "id"=>"40"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", 40]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 40]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 15ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 14:59:22 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 72ms (Views: 70.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for ::1 at 2016-03-07 14:59:25 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 78ms (Views: 71.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 14:59:27 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 58ms (Views: 57.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-07 14:59:48 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U6vsBvEorGOnH9wwKL9YJZGzzCdBYmhK17HL5v06oNqbHE/eJ9gT9Tc+tMrEowPsumyYHAo1LpgS/LvSqlcm/A==", "order"=>{"age"=>"98", "first_name"=>"nina", "last_name"=>"chen", "email"=>"ninachen8@me.com", "credit_card"=>"989", "expiration"=>"89", "order_quantity"=>"2"}, "commit"=>"Checkout"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "orders" ("age", "first_name", "last_name", "email", "credit_card", "expiration", "order_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["age", 98], ["first_name", "nina"], ["last_name", "chen"], ["email", "ninachen8@me.com"], ["credit_card", "989"], ["expiration", "89"], ["order_quantity", 2], ["created_at", "2016-03-07 20:59:48.274158"], ["updated_at", "2016-03-07 20:59:48.274158"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 2.1ms)
+
+NameError (undefined local variable or method `order' for #<OrdersController:0x007fe46ae23eb0>):
+  app/controllers/orders_controller.rb:18:in `create'
+
+
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.1ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/jingmeichen/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (150.7ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 15:00:21 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 62ms (Views: 57.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies" for ::1 at 2016-03-07 15:00:22 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 72ms (Views: 66.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 15:00:25 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-07 15:00:38 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VQ+SjPQkLyf/pBwudPJ/SCdcpII09ivrTj5uilQ2IaKduDFUItSQsW+FdNSY7iSBDIPwuX+hbTmLcx6+A1unhA==", "order"=>{"age"=>"89", "first_name"=>"nina", "last_name"=>"c", "email"=>"ninachen8@me.com", "credit_card"=>"89", "expiration"=>"88", "order_quantity"=>"1"}, "commit"=>"Checkout"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  [1m[35mTheater Load (0.2ms)[0m  SELECT "theaters".* FROM "theaters"
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "orders" ("age", "first_name", "last_name", "email", "credit_card", "expiration", "order_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["age", 89], ["first_name", "nina"], ["last_name", "c"], ["email", "ninachen8@me.com"], ["credit_card", "89"], ["expiration", "88"], ["order_quantity", 1], ["created_at", "2016-03-07 21:00:38.898716"], ["updated_at", "2016-03-07 21:00:38.898716"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 45ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 15:00:38 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 15:02:25 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.3ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 103ms (Views: 101.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 15:02:27 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 44ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for ::1 at 2016-03-07 15:02:28 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 15:02:29 -0600
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.2ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 15:02:36 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered orders/new.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/orders" for ::1 at 2016-03-07 15:02:38 -0600
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I3EN3ZL6F2/J7klrqU0V7K2SrCOjRYpzy6vDEOHrV0Drxq4FRAqo+VnPIZFFUU4lhk34GOgSzKEO5rMktobRZg==", "order"=>{"age"=>"", "first_name"=>"", "last_name"=>"", "email"=>"", "credit_card"=>"", "expiration"=>"", "order_quantity"=>""}, "commit"=>"Checkout"}
+  [1m[36m (0.9ms)[0m  [1mbegin transaction[0m
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
+  [1m[36mTheater Load (0.1ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (4.1ms)
+  Rendered orders/new.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 59ms (Views: 50.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 15:02:41 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/orders/42" for ::1 at 2016-03-07 15:02:44 -0600
+Processing by OrdersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PUrpZTPyqe+DxSa9schwwslqL7dMOh2tgKwCon94joL1/Uq95QIWeRPkTkdd1CsL4rV7jAdtW39F4XKWKBUIpA==", "id"=>"42"}
+  [1m[35mOrder Load (0.3ms)[0m  SELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", 42]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.9ms)[0m  DELETE FROM "orders" WHERE "orders"."id" = ?  [["id", 42]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/orders
+Completed 302 Found in 13ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 15:02:44 -0600
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders"
+  Rendered orders/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 15:02:45 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for ::1 at 2016-03-07 15:02:48 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/new" for ::1 at 2016-03-07 15:02:49 -0600
+Processing by MoviesController#new as HTML
+  Rendered shared/_movie_error_messages.html.erb (0.1ms)
+  Rendered movies/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 64ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 15:02:55 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 15:18:32 -0600
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.6ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (11.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 93ms (Views: 89.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 15:19:03 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.2ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 459ms (Views: 426.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies" for ::1 at 2016-03-07 15:19:17 -0600
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 82ms (Views: 75.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 15:19:18 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (5.9ms)
+  Rendered orders/new.html.erb within layouts/application (49.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 126ms (Views: 105.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for ::1 at 2016-03-07 15:19:19 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 15:19:20 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.3ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 66ms (Views: 65.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 15:19:21 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered orders/new.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for ::1 at 2016-03-07 15:19:21 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/orders/new" for ::1 at 2016-03-07 15:19:23 -0600
+Processing by OrdersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered orders/new.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders" for ::1 at 2016-03-07 15:19:26 -0600
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  Rendered orders/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 57ms (Views: 56.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for ::1 at 2016-03-07 15:19:27 -0600
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 39.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/new" for ::1 at 2016-03-07 15:19:27 -0600
+Processing by MoviesController#new as HTML
+  Rendered shared/_movie_error_messages.html.erb (0.6ms)
+  Rendered movies/new.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 15:19:29 -0600
+Processing by TheatersController#index as HTML
+  [1m[36mTheater Load (0.2ms)[0m  [1mSELECT "theaters".* FROM "theaters"[0m
+  Rendered theaters/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/new" for ::1 at 2016-03-07 15:19:31 -0600
+Processing by TheatersController#new as HTML
+  Rendered shared/_theater_error_messages.html.erb (0.6ms)
+  Rendered theaters/new.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-07 15:19:34 -0600
+Processing by TheatersController#index as HTML
+  [1m[35mTheater Load (0.2ms)[0m  SELECT "theaters".* FROM "theaters"
+  Rendered theaters/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.2ms)
