@@ -1,8 +1,9 @@
 class Order < ActiveRecord::Base
 	belongs_to :movie
 	belongs_to :theater
-	validates :age, :first_name, :last_name, :email, :credit_card, :expiration, presence: true
+	validates :first_name, :last_name, :email, :credit_card, :expiration, presence: true
     validate :order_quantity, if: :orders_sold_out?
+    validate :age, if: :age_restriction?
     
     # order limit validate in models - order.rb!!!
     # get total order
@@ -29,6 +30,14 @@ class Order < ActiveRecord::Base
         if order_total >= order_limit
            errors.add(:order_quantity, "all seats are sold out for this movie.")  
         end
+    end 
+
+    def age_restriction?
+        order = Order.new
+        user_age = order.age.to_i
+        if user_age <= 18
+            errors.add(:age, "You must be 18 or older to make a purchase.")
+        end 
     end 
     
 	# end of order limit validate!!!
