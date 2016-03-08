@@ -10,7 +10,7 @@ General information of this App:
 
 Thought process of this app: 
 
-* As a beginner programer, I spent extra time to designe the logic relationships between different data sets contained in this app: movies, theaters, orders, showtimes etc, plan on views with UI/UX researches. First to get the app running, then start to work on more challenging features. 
+* As a beginner programer, I spent extra time to design the logic relationships between different data sets contained in this app: movies, theaters, orders, showtimes etc, plan on views with UI/UX researches. First to get the app running, then start to work on more challenging features. 
 * Also spent considerable amount of timing debugging my own code: which is the best part of the learning by doing process, since debugging allows me to implement more research on Rails documentations and terminologies, and find the right solution for the problems. (Was stuck in order validation for few days, and found out it was of lacking deeper understanding of Rails associations which cause syntax errors in my code.)
 * Future improvements may include: tests, authentications and more polished UI. 
 
