@@ -1,56 +1,58 @@
 <div class="main movie-show">
   <div class="container">
-
-    <div class="movie">
+    <br>
       <!-- Display the theater's info here -->
-      <div class="info">
         <!-- theater image --> 
+      <div>
         <h3 class="movie-title"> <%= @theater.name %></h3>
         <br>
-        <div class="container">
+        <div>
          <%= image_tag @theater.image %>
         </div>
-        
-        <div class="container">Seats:<span> </span><%= @theater.seats %></div>
+        <br>
+        <div>
+          <p>Seats:<span> </span><%= @theater.seats %><p>
+           <br>
+          <button class="btn btn-default"><%= link_to "Buy Ticket", 'orders/new' %></button>
+        </div>
+        <div></div>
       </div>
-    </div>
-
-    
-  <div class="container">
-    <h2>Now Playing</h2>
-    <!-- Display each movie's info here -->
-    <% @movies.each do |movie| %>
-    <div>
-      <!-- movie image -->
-      <%= image_tag movie.image %>
-      <h3 >Movie: <%= movie.title %></h3>
-      <p>Showtime:<span> </span><%= movie.showtime %> </p>
-      <p><%= link_to "Buy Ticket", 'orders/new' %></p>
-    </div>
-   <% end %>
-  </div>
-   <!--display showtimes -->
-
-
-  <div class="container">
-    <!--<h2><%= @theater.name %></h2>-->
-    <p><%= image_tag @theater.image %></p>
-
-    <div>
-      <% @showtimes.each do |showtime| %>
-      <br>
-      <div class="card col-xs-4">
-        
-        <h2><%= showtime.month + "-" + showtime.date + "-" + showtime.hour + "-" + showtime.year %></h2>
-        
-        <%= link_to "Showtimes", showtime_path(showtime) %>
-        <button class="btn btn-default"><%= link_to "Buy Ticket", orders_new_path %></button>
-      </div>
-      <% end %>
-    </div>
-  </div>
-
-
-
   </div>
 </div>
+
+<!--
+  <div class="container">
+    <h2>Now Playing</h2>
+    <div>
+     <% @movies.each do |movie| %>
+        
+        <%= image_tag movie.image %>
+        <h3 >Movie: <%= movie.title %></h3>
+        <p>Showtime:<span> </span><%= movie.showtime %> </p>
+       <!- <p><%= link_to "Buy Ticket", 'orders/new' %></p> --> 
+    <!-- <% end %>
+    </div>
+   </div> 
+
+   <!display showtimes -->
+
+<!--
+    <div class="container">
+      <h2><%= @theater.name %></h2>
+      <p><%= image_tag @theater.image %></p>
+      <div>
+        <% @showtimes.each do |showtime| %>
+        <br>
+        <div class="card col-xs-4">
+          
+          <h2><%= showtime.month + "-" + showtime.date + "-" + showtime.hour + "-" + showtime.year %></h2>
+          
+          <%= link_to "Showtimes", showtime_path(showtime) %>
+          <button class="btn btn-default"><%= link_to "Buy Ticket", orders_new_path %></button>
+        </div>
+        <% end %>
+      </div>
+    </div>
+ </div>
+</div>
+-->

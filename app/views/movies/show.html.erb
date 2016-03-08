@@ -8,18 +8,17 @@
         
         <h3 class="actor-name"><%= @movie.title %></h3>
         <p class="actor-bio">Showtime: <%= @movie.showtime %></p>
+        <button class="btn btn-default"><%= link_to "Buy Ticket", 'orders/new' %></button>
       </div>
     </div>
 
     <h2>Theaters</h2>
     <% @theaters.each do |theater| %>
-    <div class="movie">
+    <div>
       <%= image_tag theater.image %>
-      <h3 class="movie-title"><%= theater.name %></h3>
-      <p class="movie-release-year">Seats: <%= theater.seats %></p>
-      
+      <h3><%= theater.name %></h3>
+      <p>Seats: <%= theater.seats %></p>
     </div>
-  <% end %>
-
+    <% end %>
   </div>
 </div>
