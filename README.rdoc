@@ -1,28 +1,16 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+General information of this App:
 
 * Ruby version: ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-darwin14]
+* Black Theater app is a simple Rails app, users can use this app to navigate all movies played in this fictional theater, together with its showtimes, seats, and various auditoriums, users can purchase ticket via the online ticketing system. Meanwhile, the manager of the theater/Admin can add/update/edit/delete the details of the movies, theaters, keep track of the orders. 
+* Technology used by this app include Rails and Bootstrap. 
+* The app used seeded database to start, and able to create new data dynamiclly.
+* The app uses Rails many_to_many association data structure; validation methods to create a dynamic user experiences.
 
-* System dependencies
+Thought process of this app: 
 
-* Configuration
+* As a beginner programer, I spent extra time to designe the logic relationships between different data sets contained in this app: movies, theaters, orders, showtimes etc, plan on views with UI/UX researches. First to get the app running, then start to work on more challenging features. 
+* Also spent considerable amount of timing debugging my own code: which is the best part of the learning by doing process, since debugging allows me to implement more research on Rails documentations and terminologies, and find the right solution for the problems. (Was stuck in order validation for few days, and found out it was of lacking deeper understanding of Rails associations which cause syntax errors in my code.)
+* Future improvements may include: tests, authentications and more polished UI. 
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
