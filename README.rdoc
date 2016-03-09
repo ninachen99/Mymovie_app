@@ -7,6 +7,8 @@ General information of this App:
 * Technology used by this app include Rails and Bootstrap. 
 * The app used seeded database to start, and able to create new data dynamiclly.
 * The app uses Rails many_to_many association data structure; validation methods to create a dynamic user experiences.
+  > form validations for orders, theaters, movies. 
+  > orders validations include form validation, counting aggregate orders and validate if it exceed the seats capacity of the thearer, as     as well as age validations for users that less than 18 years old. 
 
 Thought process of this app: 
 
